@@ -1,0 +1,2283 @@
+{
+    "type": "FeatureCollection",
+    "name": "loon_bohol",
+    "crs": {
+        "type": "name",
+        "properties": {
+            "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+        }
+    },
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "ADM4_EN": "Agsoso",
+                "ADM4_PCODE": "PH0701230001",
+                "ADM4_REF": null,
+                "ADM3_EN": "Loon",
+                "ADM3_PCODE": "PH0701230",
+                "ADM2_EN": "Bohol",
+                "ADM2_PCODE": "PH07012",
+                "ADM1_EN": "Region VII (Central Visayas)",
+                "ADM1_PCODE": "PH07",
+                "ADM0_EN": "Philippines (the)",
+                "ADM0_PCODE": "PH",
+                "date": "2022-11-09",
+                "validOn": "2023-11-06",
+                "validTo": null,
+                "Shape_Leng": 0.0470222175911,
+                "Shape_Area": 0.000101282358689,
+                "AREA_SQKM": 1.22900695204
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [123.81034736900006, 9.798525189000031],
+                        [123.82072210600006, 9.795936010000048],
+                        [123.82408014000009, 9.785049275000063],
+                        [123.81218792300001, 9.789176431000044],
+                        [123.81034736900006, 9.798525189000031]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ADM4_EN": "Badbad Occidental",
+                "ADM4_PCODE": "PH0701230002",
+                "ADM4_REF": null,
+                "ADM3_EN": "Loon",
+                "ADM3_PCODE": "PH0701230",
+                "ADM2_EN": "Bohol",
+                "ADM2_PCODE": "PH07012",
+                "ADM1_EN": "Region VII (Central Visayas)",
+                "ADM1_PCODE": "PH07",
+                "ADM0_EN": "Philippines (the)",
+                "ADM0_PCODE": "PH",
+                "date": "2022-11-09",
+                "validOn": "2023-11-06",
+                "validTo": null,
+                "Shape_Leng": 0.0377447771481,
+                "Shape_Area": 6.96082537301e-5,
+                "AREA_SQKM": 0.844634720932
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [123.80462800400005, 9.80295297500004],
+                        [123.81652762600004, 9.80179350700007],
+                        [123.81841445100008, 9.796239010000022],
+                        [123.80462800400005, 9.80295297500004]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ADM4_EN": "Badbad Oriental",
+                "ADM4_PCODE": "PH0701230003",
+                "ADM4_REF": null,
+                "ADM3_EN": "Loon",
+                "ADM3_PCODE": "PH0701230",
+                "ADM2_EN": "Bohol",
+                "ADM2_PCODE": "PH07012",
+                "ADM1_EN": "Region VII (Central Visayas)",
+                "ADM1_PCODE": "PH07",
+                "ADM0_EN": "Philippines (the)",
+                "ADM0_PCODE": "PH",
+                "date": "2022-11-09",
+                "validOn": "2023-11-06",
+                "validTo": null,
+                "Shape_Leng": 0.0558921005665,
+                "Shape_Area": 9.97904923923e-5,
+                "AREA_SQKM": 1.21085687667
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [123.80593611300003, 9.806872424000062],
+                        [123.82129229500003, 9.809063657000024],
+                        [123.82072210600006, 9.795936010000048],
+                        [123.80593611300003, 9.806872424000062]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ADM4_EN": "Bagacay Katipunan",
+                "ADM4_PCODE": "PH0701230004",
+                "ADM4_REF": null,
+                "ADM3_EN": "Loon",
+                "ADM3_PCODE": "PH0701230",
+                "ADM2_EN": "Bohol",
+                "ADM2_PCODE": "PH07012",
+                "ADM1_EN": "Region VII (Central Visayas)",
+                "ADM1_PCODE": "PH07",
+                "ADM0_EN": "Philippines (the)",
+                "ADM0_PCODE": "PH",
+                "date": "2022-11-09",
+                "validOn": "2023-11-06",
+                "validTo": null,
+                "Shape_Leng": 0.0515566129752,
+                "Shape_Area": 0.0001615124245,
+                "AREA_SQKM": 1.95952570222
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [123.87342559600006, 9.84941554300002],
+                        [123.86606694500006, 9.842956602000072],
+                        [123.85454961100004, 9.85068598600003],
+                        [123.85916943300003, 9.859427505000042],
+                        [123.87342559600006, 9.84941554300002]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ADM4_EN": "Bagacay Kawayan",
+                "ADM4_PCODE": "PH0701230005",
+                "ADM4_REF": null,
+                "ADM3_EN": "Loon",
+                "ADM3_PCODE": "PH0701230",
+                "ADM2_EN": "Bohol",
+                "ADM2_PCODE": "PH07012",
+                "ADM1_EN": "Region VII (Central Visayas)",
+                "ADM1_PCODE": "PH07",
+                "ADM0_EN": "Philippines (the)",
+                "ADM0_PCODE": "PH",
+                "date": "2022-11-09",
+                "validOn": "2023-11-06",
+                "validTo": null,
+                "Shape_Leng": 0.0598887378197,
+                "Shape_Area": 0.000233322900326,
+                "AREA_SQKM": 2.83084289771
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [123.86189064400003, 9.845804552000061],
+                        [123.86041613400005, 9.831028877000051],
+                        [123.85026593400005, 9.832097185000066],
+                        [123.85085089000006, 9.84740642600002],
+                        [123.86189064400003, 9.845804552000061]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ADM4_EN": "Bagacay Saong",
+                "ADM4_PCODE": "PH0701230006",
+                "ADM4_REF": null,
+                "ADM3_EN": "Loon",
+                "ADM3_PCODE": "PH0701230",
+                "ADM2_EN": "Bohol",
+                "ADM2_PCODE": "PH07012",
+                "ADM1_EN": "Region VII (Central Visayas)",
+                "ADM1_PCODE": "PH07",
+                "ADM0_EN": "Philippines (the)",
+                "ADM0_PCODE": "PH",
+                "date": "2022-11-09",
+                "validOn": "2023-11-06",
+                "validTo": null,
+                "Shape_Leng": 0.0510594693442,
+                "Shape_Area": 0.000152419088154,
+                "AREA_SQKM": 1.8492526102
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [123.88448483200011, 9.841665405000072],
+                        [123.8821231600001, 9.834436881000045],
+                        [123.86606694500006, 9.842956602000072],
+                        [123.87342559600006, 9.84941554300002],
+                        [123.88448483200011, 9.841665405000072]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ADM4_EN": "Bahi",
+                "ADM4_PCODE": "PH0701230007",
+                "ADM4_REF": null,
+                "ADM3_EN": "Loon",
+                "ADM3_PCODE": "PH0701230",
+                "ADM2_EN": "Bohol",
+                "ADM2_PCODE": "PH07012",
+                "ADM1_EN": "Region VII (Central Visayas)",
+                "ADM1_PCODE": "PH07",
+                "ADM0_EN": "Philippines (the)",
+                "ADM0_PCODE": "PH",
+                "date": "2022-11-09",
+                "validOn": "2023-11-06",
+                "validTo": null,
+                "Shape_Leng": 0.0400611574199,
+                "Shape_Area": 8.72207541524e-5,
+                "AREA_SQKM": 1.0581943407
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [123.83919565100007, 9.852000408000038],
+                        [123.85085089000006, 9.84740642600002],
+                        [123.84672043500007, 9.842640768000024],
+                        [123.83919565100007, 9.852000408000038]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ADM4_EN": "Basac",
+                "ADM4_PCODE": "PH0701230008",
+                "ADM4_REF": null,
+                "ADM3_EN": "Loon",
+                "ADM3_PCODE": "PH0701230",
+                "ADM2_EN": "Bohol",
+                "ADM2_PCODE": "PH07012",
+                "ADM1_EN": "Region VII (Central Visayas)",
+                "ADM1_PCODE": "PH07",
+                "ADM0_EN": "Philippines (the)",
+                "ADM0_PCODE": "PH",
+                "date": "2022-11-09",
+                "validOn": "2023-11-06",
+                "validTo": null,
+                "Shape_Leng": 0.102826360874,
+                "Shape_Area": 0.000200944810443,
+                "AREA_SQKM": 2.4381553142
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [123.80543814000009, 9.831875022000077],
+                        [123.8109775690001, 9.820045618000051],
+                        [123.80590882400008, 9.807996097000057],
+                        [123.79358699400007, 9.815057337000042],
+                        [123.80543814000009, 9.831875022000077]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ADM4_EN": "Basdacu",
+                "ADM4_PCODE": "PH0701230009",
+                "ADM4_REF": null,
+                "ADM3_EN": "Loon",
+                "ADM3_PCODE": "PH0701230",
+                "ADM2_EN": "Bohol",
+                "ADM2_PCODE": "PH07012",
+                "ADM1_EN": "Region VII (Central Visayas)",
+                "ADM1_PCODE": "PH07",
+                "ADM0_EN": "Philippines (the)",
+                "ADM0_PCODE": "PH",
+                "date": "2022-11-09",
+                "validOn": "2023-11-06",
+                "validTo": null,
+                "Shape_Leng": 0.0561264137129,
+                "Shape_Area": 8.41395792136e-5,
+                "AREA_SQKM": 1.02101971996
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [123.78563138200002, 9.790562753000074],
+                        [123.7936082110001, 9.783294261000037],
+                        [123.79422604400008, 9.777375175000032],
+                        [123.78378510000005, 9.775484555000048],
+                        [123.78563138200002, 9.790562753000074]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ADM4_EN": "Basdio",
+                "ADM4_PCODE": "PH0701230010",
+                "ADM4_REF": null,
+                "ADM3_EN": "Loon",
+                "ADM3_PCODE": "PH0701230",
+                "ADM2_EN": "Bohol",
+                "ADM2_PCODE": "PH07012",
+                "ADM1_EN": "Region VII (Central Visayas)",
+                "ADM1_PCODE": "PH07",
+                "ADM0_EN": "Philippines (the)",
+                "ADM0_PCODE": "PH",
+                "date": "2022-11-09",
+                "validOn": "2023-11-06",
+                "validTo": null,
+                "Shape_Leng": 0.0405347626675,
+                "Shape_Area": 8.8064026342e-5,
+                "AREA_SQKM": 1.06842718924
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [123.78599086100007, 9.856374267000035],
+                        [123.79625560600005, 9.850625480000076],
+                        [123.79328494900005, 9.842370259000063],
+                        [123.78557250200004, 9.850804461000052],
+                        [123.78599086100007, 9.856374267000035]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ADM4_EN": "Biasong",
+                "ADM4_PCODE": "PH0701230011",
+                "ADM4_REF": null,
+                "ADM3_EN": "Loon",
+                "ADM3_PCODE": "PH0701230",
+                "ADM2_EN": "Bohol",
+                "ADM2_PCODE": "PH07012",
+                "ADM1_EN": "Region VII (Central Visayas)",
+                "ADM1_PCODE": "PH07",
+                "ADM0_EN": "Philippines (the)",
+                "ADM0_PCODE": "PH",
+                "date": "2022-11-09",
+                "validOn": "2023-11-06",
+                "validTo": null,
+                "Shape_Leng": 0.0449737678479,
+                "Shape_Area": 9.58964085626e-5,
+                "AREA_SQKM": 1.16353122367
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [123.8099408490001, 9.833793929000024],
+                        [123.81696354100006, 9.82118366900005],
+                        [123.80739763500003, 9.822245552000027],
+                        [123.8099408490001, 9.833793929000024]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ADM4_EN": "Bongco",
+                "ADM4_PCODE": "PH0701230012",
+                "ADM4_REF": null,
+                "ADM3_EN": "Loon",
+                "ADM3_PCODE": "PH0701230",
+                "ADM2_EN": "Bohol",
+                "ADM2_PCODE": "PH07012",
+                "ADM1_EN": "Region VII (Central Visayas)",
+                "ADM1_PCODE": "PH07",
+                "ADM0_EN": "Philippines (the)",
+                "ADM0_PCODE": "PH",
+                "date": "2022-11-09",
+                "validOn": "2023-11-06",
+                "validTo": null,
+                "Shape_Leng": 0.0504148147592,
+                "Shape_Area": 0.000121238724154,
+                "AREA_SQKM": 1.47110794762
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [123.84808307600008, 9.803005966000057],
+                        [123.85698888800005, 9.811794877000068],
+                        [123.85760428200001, 9.796343617000048],
+                        [123.84808307600008, 9.803005966000057]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ADM4_EN": "Bugho",
+                "ADM4_PCODE": "PH0701230013",
+                "ADM4_REF": null,
+                "ADM3_EN": "Loon",
+                "ADM3_PCODE": "PH0701230",
+                "ADM2_EN": "Bohol",
+                "ADM2_PCODE": "PH07012",
+                "ADM1_EN": "Region VII (Central Visayas)",
+                "ADM1_PCODE": "PH07",
+                "ADM0_EN": "Philippines (the)",
+                "ADM0_PCODE": "PH",
+                "date": "2022-11-09",
+                "validOn": "2023-11-06",
+                "validTo": null,
+                "Shape_Leng": 0.0686651722416,
+                "Shape_Area": 0.000239906413117,
+                "AREA_SQKM": 2.91111986048
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [123.83690763200002, 9.803873587000055],
+                        [123.84588126000006, 9.787291498000059],
+                        [123.83621670000002, 9.779769722000026],
+                        [123.82644387500011, 9.799704665000036],
+                        [123.83690763200002, 9.803873587000055]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ADM4_EN": "Cabacongan",
+                "ADM4_PCODE": "PH0701230014",
+                "ADM4_REF": null,
+                "ADM3_EN": "Loon",
+                "ADM3_PCODE": "PH0701230",
+                "ADM2_EN": "Bohol",
+                "ADM2_PCODE": "PH07012",
+                "ADM1_EN": "Region VII (Central Visayas)",
+                "ADM1_PCODE": "PH07",
+                "ADM0_EN": "Philippines (the)",
+                "ADM0_PCODE": "PH",
+                "date": "2022-11-09",
+                "validOn": "2023-11-06",
+                "validTo": null,
+                "Shape_Leng": 0.0502266764895,
+                "Shape_Area": 0.000137038316186,
+                "AREA_SQKM": 1.66250738573
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [123.76070885100012, 9.876033703000076],
+                        [123.77432067900008, 9.866974776000063],
+                        [123.76631795600008, 9.860539351000057],
+                        [123.76070885100012, 9.876033703000076]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ADM4_EN": "Cabadug",
+                "ADM4_PCODE": "PH0701230015",
+                "ADM4_REF": null,
+                "ADM3_EN": "Loon",
+                "ADM3_PCODE": "PH0701230",
+                "ADM2_EN": "Bohol",
+                "ADM2_PCODE": "PH07012",
+                "ADM1_EN": "Region VII (Central Visayas)",
+                "ADM1_PCODE": "PH07",
+                "ADM0_EN": "Philippines (the)",
+                "ADM0_PCODE": "PH",
+                "date": "2022-11-09",
+                "validOn": "2023-11-06",
+                "validTo": null,
+                "Shape_Leng": 0.0702775106001,
+                "Shape_Area": 0.000153624359254,
+                "AREA_SQKM": 1.86428507679
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [123.79314135200002, 9.77587937900006],
+                        [123.81235554000011, 9.765550981000047],
+                        [123.81817730600005, 9.76401742400003],
+                        [123.8055493280001, 9.760676895000074],
+                        [123.7895978030001, 9.768158202000052],
+                        [123.79314135200002, 9.77587937900006]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ADM4_EN": "Cabug",
+                "ADM4_PCODE": "PH0701230016",
+                "ADM4_REF": null,
+                "ADM3_EN": "Loon",
+                "ADM3_PCODE": "PH0701230",
+                "ADM2_EN": "Bohol",
+                "ADM2_PCODE": "PH07012",
+                "ADM1_EN": "Region VII (Central Visayas)",
+                "ADM1_PCODE": "PH07",
+                "ADM0_EN": "Philippines (the)",
+                "ADM0_PCODE": "PH",
+                "date": "2022-11-09",
+                "validOn": "2023-11-06",
+                "validTo": null,
+                "Shape_Leng": 0.0498795288555,
+                "Shape_Area": 9.6844764795e-5,
+                "AREA_SQKM": 1.17522340953
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [123.80117778300007, 9.777403377000041],
+                        [123.81235554000011, 9.765550981000047],
+                        [123.79238624200002, 9.777367654000045],
+                        [123.80117778300007, 9.777403377000041]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ADM4_EN": "Calayugan Norte",
+                "ADM4_PCODE": "PH0701230017",
+                "ADM4_REF": null,
+                "ADM3_EN": "Loon",
+                "ADM3_PCODE": "PH0701230",
+                "ADM2_EN": "Bohol",
+                "ADM2_PCODE": "PH07012",
+                "ADM1_EN": "Region VII (Central Visayas)",
+                "ADM1_PCODE": "PH07",
+                "ADM0_EN": "Philippines (the)",
+                "ADM0_PCODE": "PH",
+                "date": "2022-11-09",
+                "validOn": "2023-11-06",
+                "validTo": null,
+                "Shape_Leng": 0.0559469644917,
+                "Shape_Area": 6.24392457659e-5,
+                "AREA_SQKM": 0.757545090201
+            },
+            "geometry": {
+                "type": "MultiPolygon",
+                "coordinates": [
+                    [
+                        [
+                            [123.80153223500008, 9.841144728000074],
+                            [123.80645574200003, 9.841739649000033],
+                            [123.80496936600002, 9.838316978000023],
+                            [123.80153223500008, 9.841144728000074]
+                        ]
+                    ],
+                    [
+                        [
+                            [123.7999531160001, 9.852707040000041],
+                            [123.80125916000009, 9.841376430000025],
+                            [123.79702298900008, 9.851116070000046],
+                            [123.7999531160001, 9.852707040000041]
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ADM4_EN": "Calayugan Sur",
+                "ADM4_PCODE": "PH0701230018",
+                "ADM4_REF": null,
+                "ADM3_EN": "Loon",
+                "ADM3_PCODE": "PH0701230",
+                "ADM2_EN": "Bohol",
+                "ADM2_PCODE": "PH07012",
+                "ADM1_EN": "Region VII (Central Visayas)",
+                "ADM1_PCODE": "PH07",
+                "ADM0_EN": "Philippines (the)",
+                "ADM0_PCODE": "PH",
+                "date": "2022-11-09",
+                "validOn": "2023-11-06",
+                "validTo": null,
+                "Shape_Leng": 0.0532268703569,
+                "Shape_Area": 3.34525636058e-5,
+                "AREA_SQKM": 0.405866177686
+            },
+            "geometry": {
+                "type": "MultiPolygon",
+                "coordinates": [
+                    [
+                        [
+                            [123.80259783400004, 9.838750634000064],
+                            [123.80436287500004, 9.838897380000049],
+                            [123.80490282700009, 9.83821032800006],
+                            [123.80259783400004, 9.838750634000064]
+                        ]
+                    ],
+                    [
+                        [
+                            [123.79768000500007, 9.844815698000048],
+                            [123.79328494900005, 9.842370259000063],
+                            [123.79702298900008, 9.851116070000046],
+                            [123.79768000500007, 9.844815698000048]
+                        ]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ADM4_EN": "Canmaag",
+                "ADM4_PCODE": "PH0701230019",
+                "ADM4_REF": null,
+                "ADM3_EN": "Loon",
+                "ADM3_PCODE": "PH0701230",
+                "ADM2_EN": "Bohol",
+                "ADM2_PCODE": "PH07012",
+                "ADM1_EN": "Region VII (Central Visayas)",
+                "ADM1_PCODE": "PH07",
+                "ADM0_EN": "Philippines (the)",
+                "ADM0_PCODE": "PH",
+                "date": "2022-11-09",
+                "validOn": "2023-11-06",
+                "validTo": null,
+                "Shape_Leng": 0.0674753317624,
+                "Shape_Area": 0.000213954381885,
+                "AREA_SQKM": 2.59599727125
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [123.85011891400006, 9.831831306000026],
+                        [123.86459550300003, 9.817873501000065],
+                        [123.84921611200002, 9.811658347000048],
+                        [123.85011891400006, 9.831831306000026]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ADM4_EN": "Cambaquiz",
+                "ADM4_PCODE": "PH0701230020",
+                "ADM4_REF": null,
+                "ADM3_EN": "Loon",
+                "ADM3_PCODE": "PH0701230",
+                "ADM2_EN": "Bohol",
+                "ADM2_PCODE": "PH07012",
+                "ADM1_EN": "Region VII (Central Visayas)",
+                "ADM1_PCODE": "PH07",
+                "ADM0_EN": "Philippines (the)",
+                "ADM0_PCODE": "PH",
+                "date": "2022-11-09",
+                "validOn": "2023-11-06",
+                "validTo": null,
+                "Shape_Leng": 0.0468588973144,
+                "Shape_Area": 9.12219386713e-5,
+                "AREA_SQKM": 1.10662193435
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [123.78174871800002, 9.892355811000073],
+                        [123.79254639100009, 9.88639366600006],
+                        [123.78394681000009, 9.878880967000043],
+                        [123.77827833800006, 9.88222262100004],
+                        [123.78174871800002, 9.892355811000073]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ADM4_EN": "Campatud",
+                "ADM4_PCODE": "PH0701230021",
+                "ADM4_REF": null,
+                "ADM3_EN": "Loon",
+                "ADM3_PCODE": "PH0701230",
+                "ADM2_EN": "Bohol",
+                "ADM2_PCODE": "PH07012",
+                "ADM1_EN": "Region VII (Central Visayas)",
+                "ADM1_PCODE": "PH07",
+                "ADM0_EN": "Philippines (the)",
+                "ADM0_PCODE": "PH",
+                "date": "2022-11-09",
+                "validOn": "2023-11-06",
+                "validTo": null,
+                "Shape_Leng": 0.081422067485,
+                "Shape_Area": 0.000241227918261,
+                "AREA_SQKM": 2.92688745448
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [123.89317702100004, 9.82594012900006],
+                        [123.87757675700004, 9.811934307000058],
+                        [123.87489388600011, 9.812097287000029],
+                        [123.88448483200011, 9.841665405000072],
+                        [123.89317702100004, 9.82594012900006]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ADM4_EN": "Candaigan",
+                "ADM4_PCODE": "PH0701230022",
+                "ADM4_REF": null,
+                "ADM3_EN": "Loon",
+                "ADM3_PCODE": "PH0701230",
+                "ADM2_EN": "Bohol",
+                "ADM2_PCODE": "PH07012",
+                "ADM1_EN": "Region VII (Central Visayas)",
+                "ADM1_PCODE": "PH07",
+                "ADM0_EN": "Philippines (the)",
+                "ADM0_PCODE": "PH",
+                "date": "2022-11-09",
+                "validOn": "2023-11-06",
+                "validTo": null,
+                "Shape_Leng": 0.0518209089573,
+                "Shape_Area": 0.000162602335636,
+                "AREA_SQKM": 1.97283222375
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [123.84875964300011, 9.842419619000054],
+                        [123.85011891400006, 9.831831306000026],
+                        [123.83288952100008, 9.833599690000028],
+                        [123.83539269800008, 9.841635919000055],
+                        [123.84875964300011, 9.842419619000054]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ADM4_EN": "Canhangdon Occidental",
+                "ADM4_PCODE": "PH0701230023",
+                "ADM4_REF": null,
+                "ADM3_EN": "Loon",
+                "ADM3_PCODE": "PH0701230",
+                "ADM2_EN": "Bohol",
+                "ADM2_PCODE": "PH07012",
+                "ADM1_EN": "Region VII (Central Visayas)",
+                "ADM1_PCODE": "PH07",
+                "ADM0_EN": "Philippines (the)",
+                "ADM0_PCODE": "PH",
+                "date": "2022-11-09",
+                "validOn": "2023-11-06",
+                "validTo": null,
+                "Shape_Leng": 0.0611777148835,
+                "Shape_Area": 9.02235047623e-5,
+                "AREA_SQKM": 1.09466569189
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [123.80454256500002, 9.837572308000063],
+                        [123.82088475300009, 9.840042711000024],
+                        [123.82139737400007, 9.836213671000053],
+                        [123.80750068700002, 9.83090639300002],
+                        [123.80454256500002, 9.837572308000063]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ADM4_EN": "Canhangdon Oriental",
+                "ADM4_PCODE": "PH0701230024",
+                "ADM4_REF": null,
+                "ADM3_EN": "Loon",
+                "ADM3_PCODE": "PH0701230",
+                "ADM2_EN": "Bohol",
+                "ADM2_PCODE": "PH07012",
+                "ADM1_EN": "Region VII (Central Visayas)",
+                "ADM1_PCODE": "PH07",
+                "ADM0_EN": "Philippines (the)",
+                "ADM0_PCODE": "PH",
+                "date": "2022-11-09",
+                "validOn": "2023-11-06",
+                "validTo": null,
+                "Shape_Leng": 0.0331057911791,
+                "Shape_Area": 5.91725202568e-5,
+                "AREA_SQKM": 0.717938088645
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [123.81810524100001, 9.838893924000047],
+                        [123.81821382700002, 9.828249669000058],
+                        [123.8099408490001, 9.833793929000024],
+                        [123.81810524100001, 9.838893924000047]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ADM4_EN": "Canigaan",
+                "ADM4_PCODE": "PH0701230025",
+                "ADM4_REF": null,
+                "ADM3_EN": "Loon",
+                "ADM3_PCODE": "PH0701230",
+                "ADM2_EN": "Bohol",
+                "ADM2_PCODE": "PH07012",
+                "ADM1_EN": "Region VII (Central Visayas)",
+                "ADM1_PCODE": "PH07",
+                "ADM0_EN": "Philippines (the)",
+                "ADM0_PCODE": "PH",
+                "date": "2022-11-09",
+                "validOn": "2023-11-06",
+                "validTo": null,
+                "Shape_Leng": 0.0691440994022,
+                "Shape_Area": 8.74036977249e-5,
+                "AREA_SQKM": 1.06041448053
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [123.81095709600004, 9.853416983000045],
+                        [123.80711234700004, 9.844160650000049],
+                        [123.7999531160001, 9.852707040000041],
+                        [123.81095709600004, 9.853416983000045]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ADM4_EN": "Canmanoc",
+                "ADM4_PCODE": "PH0701230026",
+                "ADM4_REF": null,
+                "ADM3_EN": "Loon",
+                "ADM3_PCODE": "PH0701230",
+                "ADM2_EN": "Bohol",
+                "ADM2_PCODE": "PH07012",
+                "ADM1_EN": "Region VII (Central Visayas)",
+                "ADM1_PCODE": "PH07",
+                "ADM0_EN": "Philippines (the)",
+                "ADM0_PCODE": "PH",
+                "date": "2022-11-09",
+                "validOn": "2023-11-06",
+                "validTo": null,
+                "Shape_Leng": 0.0958625535814,
+                "Shape_Area": 0.00027131469064,
+                "AREA_SQKM": 3.29239680159
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [123.79289056900006, 9.790319820000036],
+                        [123.81220533400005, 9.774949852000077],
+                        [123.82554860500011, 9.771443956000041],
+                        [123.81235554000011, 9.765550981000047],
+                        [123.80812467100009, 9.774736618000077],
+                        [123.79422604400008, 9.777375175000032],
+                        [123.79289056900006, 9.790319820000036]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ADM4_EN": "Cansuagwit",
+                "ADM4_PCODE": "PH0701230027",
+                "ADM4_REF": null,
+                "ADM3_EN": "Loon",
+                "ADM3_PCODE": "PH0701230",
+                "ADM2_EN": "Bohol",
+                "ADM2_PCODE": "PH07012",
+                "ADM1_EN": "Region VII (Central Visayas)",
+                "ADM1_PCODE": "PH07",
+                "ADM0_EN": "Philippines (the)",
+                "ADM0_PCODE": "PH",
+                "date": "2022-11-09",
+                "validOn": "2023-11-06",
+                "validTo": null,
+                "Shape_Leng": 0.0416434080896,
+                "Shape_Area": 8.71966887032e-5,
+                "AREA_SQKM": 1.05793049435
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [123.82234524600005, 9.841321352000023],
+                        [123.83539269800008, 9.841635919000055],
+                        [123.83288952100008, 9.833599690000028],
+                        [123.82234524600005, 9.841321352000023]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ADM4_EN": "Cansubayon",
+                "ADM4_PCODE": "PH0701230028",
+                "ADM4_REF": null,
+                "ADM3_EN": "Loon",
+                "ADM3_PCODE": "PH0701230",
+                "ADM2_EN": "Bohol",
+                "ADM2_PCODE": "PH07012",
+                "ADM1_EN": "Region VII (Central Visayas)",
+                "ADM1_PCODE": "PH07",
+                "ADM0_EN": "Philippines (the)",
+                "ADM0_PCODE": "PH",
+                "date": "2022-11-09",
+                "validOn": "2023-11-06",
+                "validTo": null,
+                "Shape_Leng": 0.0651127017736,
+                "Shape_Area": 0.000221483820909,
+                "AREA_SQKM": 2.68744081515
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [123.8721951660001, 9.81937517700004],
+                        [123.87581826700011, 9.811075029000051],
+                        [123.860553191, 9.798967721000054],
+                        [123.8573659330001, 9.813362960000063],
+                        [123.8721951660001, 9.81937517700004]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ADM4_EN": "Catagbacan Handig",
+                "ADM4_PCODE": "PH0701230029",
+                "ADM4_REF": null,
+                "ADM3_EN": "Loon",
+                "ADM3_PCODE": "PH0701230",
+                "ADM2_EN": "Bohol",
+                "ADM2_PCODE": "PH07012",
+                "ADM1_EN": "Region VII (Central Visayas)",
+                "ADM1_PCODE": "PH07",
+                "ADM0_EN": "Philippines (the)",
+                "ADM0_PCODE": "PH",
+                "date": "2022-11-09",
+                "validOn": "2023-11-06",
+                "validTo": null,
+                "Shape_Leng": 0.0405564497591,
+                "Shape_Area": 8.38716306454e-5,
+                "AREA_SQKM": 1.01755726241
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [123.82916837900007, 9.854744542000049],
+                        [123.83919565100007, 9.852000408000038],
+                        [123.825638163, 9.845946059000028],
+                        [123.82916837900007, 9.854744542000049]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ADM4_EN": "Catagbacan Norte",
+                "ADM4_PCODE": "PH0701230030",
+                "ADM4_REF": null,
+                "ADM3_EN": "Loon",
+                "ADM3_PCODE": "PH0701230",
+                "ADM2_EN": "Bohol",
+                "ADM2_PCODE": "PH07012",
+                "ADM1_EN": "Region VII (Central Visayas)",
+                "ADM1_PCODE": "PH07",
+                "ADM0_EN": "Philippines (the)",
+                "ADM0_PCODE": "PH",
+                "date": "2022-11-09",
+                "validOn": "2023-11-06",
+                "validTo": null,
+                "Shape_Leng": 0.053431551194,
+                "Shape_Area": 5.58071641754e-5,
+                "AREA_SQKM": 0.677061955823
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [123.82514487000003, 9.848829918000035],
+                        [123.83012508200011, 9.861867415000063],
+                        [123.8352710150001, 9.857922611000049],
+                        [123.82514487000003, 9.848829918000035]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ADM4_EN": "Catagbacan Sur",
+                "ADM4_PCODE": "PH0701230031",
+                "ADM4_REF": null,
+                "ADM3_EN": "Loon",
+                "ADM3_PCODE": "PH0701230",
+                "ADM2_EN": "Bohol",
+                "ADM2_PCODE": "PH07012",
+                "ADM1_EN": "Region VII (Central Visayas)",
+                "ADM1_PCODE": "PH07",
+                "ADM0_EN": "Philippines (the)",
+                "ADM0_PCODE": "PH",
+                "date": "2022-11-09",
+                "validOn": "2023-11-06",
+                "validTo": null,
+                "Shape_Leng": 0.0417908436674,
+                "Shape_Area": 4.80338736346e-5,
+                "AREA_SQKM": 0.582770238719
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [123.81693762800012, 9.846346483000048],
+                        [123.82326093400002, 9.851122688000032],
+                        [123.82617995100009, 9.847202779000042],
+                        [123.82234524600005, 9.841321352000023],
+                        [123.81693762800012, 9.846346483000048]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ADM4_EN": "Cantam-is Bago",
+                "ADM4_PCODE": "PH0701230032",
+                "ADM4_REF": null,
+                "ADM3_EN": "Loon",
+                "ADM3_PCODE": "PH0701230",
+                "ADM2_EN": "Bohol",
+                "ADM2_PCODE": "PH07012",
+                "ADM1_EN": "Region VII (Central Visayas)",
+                "ADM1_PCODE": "PH07",
+                "ADM0_EN": "Philippines (the)",
+                "ADM0_PCODE": "PH",
+                "date": "2022-11-09",
+                "validOn": "2023-11-06",
+                "validTo": null,
+                "Shape_Leng": 0.0551881579805,
+                "Shape_Area": 0.000126155319895,
+                "AREA_SQKM": 1.53063821834
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [123.81821382700002, 9.828249669000058],
+                        [123.82790291000003, 9.839159429000063],
+                        [123.83821962000002, 9.83125620100003],
+                        [123.81821382700002, 9.828249669000058]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ADM4_EN": "Cantaongon",
+                "ADM4_PCODE": "PH0701230033",
+                "ADM4_REF": null,
+                "ADM3_EN": "Loon",
+                "ADM3_PCODE": "PH0701230",
+                "ADM2_EN": "Bohol",
+                "ADM2_PCODE": "PH07012",
+                "ADM1_EN": "Region VII (Central Visayas)",
+                "ADM1_PCODE": "PH07",
+                "ADM0_EN": "Philippines (the)",
+                "ADM0_PCODE": "PH",
+                "date": "2022-11-09",
+                "validOn": "2023-11-06",
+                "validTo": null,
+                "Shape_Leng": 0.0637572711709,
+                "Shape_Area": 0.000227466762493,
+                "AREA_SQKM": 2.75993781739
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [123.85066928900005, 9.829336694000062],
+                        [123.84857073100011, 9.812443665000046],
+                        [123.83707537200007, 9.81524497600003],
+                        [123.83821962000002, 9.83125620100003],
+                        [123.85066928900005, 9.829336694000062]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ADM4_EN": "Cantumocad",
+                "ADM4_PCODE": "PH0701230034",
+                "ADM4_REF": null,
+                "ADM3_EN": "Loon",
+                "ADM3_PCODE": "PH0701230",
+                "ADM2_EN": "Bohol",
+                "ADM2_PCODE": "PH07012",
+                "ADM1_EN": "Region VII (Central Visayas)",
+                "ADM1_PCODE": "PH07",
+                "ADM0_EN": "Philippines (the)",
+                "ADM0_PCODE": "PH",
+                "date": "2022-11-09",
+                "validOn": "2023-11-06",
+                "validTo": null,
+                "Shape_Leng": 0.0541133280373,
+                "Shape_Area": 5.4695657653e-5,
+                "AREA_SQKM": 0.663572263731
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [123.82993831400006, 9.861718604000032],
+                        [123.84312318400009, 9.856151647000047],
+                        [123.83919565100007, 9.852000408000038],
+                        [123.82993831400006, 9.861718604000032]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ADM4_EN": "Cantam-is Baslay",
+                "ADM4_PCODE": "PH0701230035",
+                "ADM4_REF": null,
+                "ADM3_EN": "Loon",
+                "ADM3_PCODE": "PH0701230",
+                "ADM2_EN": "Bohol",
+                "ADM2_PCODE": "PH07012",
+                "ADM1_EN": "Region VII (Central Visayas)",
+                "ADM1_PCODE": "PH07",
+                "ADM0_EN": "Philippines (the)",
+                "ADM0_PCODE": "PH",
+                "date": "2022-11-09",
+                "validOn": "2023-11-06",
+                "validTo": null,
+                "Shape_Leng": 0.0691200864979,
+                "Shape_Area": 0.000218423655298,
+                "AREA_SQKM": 2.65020238278
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [123.83762039600003, 9.827680240000063],
+                        [123.83245396600012, 9.81590852200003],
+                        [123.81696354100006, 9.82118366900005],
+                        [123.81821382700002, 9.828249669000058],
+                        [123.83762039600003, 9.827680240000063]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ADM4_EN": "Cogon Norte (Pob.)",
+                "ADM4_PCODE": "PH0701230036",
+                "ADM4_REF": null,
+                "ADM3_EN": "Loon",
+                "ADM3_PCODE": "PH0701230",
+                "ADM2_EN": "Bohol",
+                "ADM2_PCODE": "PH07012",
+                "ADM1_EN": "Region VII (Central Visayas)",
+                "ADM1_PCODE": "PH07",
+                "ADM0_EN": "Philippines (the)",
+                "ADM0_PCODE": "PH",
+                "date": "2022-11-09",
+                "validOn": "2023-11-06",
+                "validTo": null,
+                "Shape_Leng": 0.078576804521,
+                "Shape_Area": 0.000147095386235,
+                "AREA_SQKM": 1.78484381486
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [123.79426267800011, 9.81478007100003],
+                        [123.80590882400008, 9.807996097000057],
+                        [123.79988998400006, 9.797082983000053],
+                        [123.79166470100006, 9.80654725900007],
+                        [123.79426267800011, 9.81478007100003]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ADM4_EN": "Cogon Sur",
+                "ADM4_PCODE": "PH0701230037",
+                "ADM4_REF": null,
+                "ADM3_EN": "Loon",
+                "ADM3_PCODE": "PH0701230",
+                "ADM2_EN": "Bohol",
+                "ADM2_PCODE": "PH07012",
+                "ADM1_EN": "Region VII (Central Visayas)",
+                "ADM1_PCODE": "PH07",
+                "ADM0_EN": "Philippines (the)",
+                "ADM0_PCODE": "PH",
+                "date": "2022-11-09",
+                "validOn": "2023-11-06",
+                "validTo": null,
+                "Shape_Leng": 0.0373341274888,
+                "Shape_Area": 7.82694320144e-5,
+                "AREA_SQKM": 0.949755188136
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [123.79889639800001, 9.79862747900006],
+                        [123.80559282200011, 9.79118995500005],
+                        [123.80247245700002, 9.786176812000065],
+                        [123.79375606700012, 9.79101621500007],
+                        [123.79889639800001, 9.79862747900006]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ADM4_EN": "Cuasi",
+                "ADM4_PCODE": "PH0701230038",
+                "ADM4_REF": null,
+                "ADM3_EN": "Loon",
+                "ADM3_PCODE": "PH0701230",
+                "ADM2_EN": "Bohol",
+                "ADM2_PCODE": "PH07012",
+                "ADM1_EN": "Region VII (Central Visayas)",
+                "ADM1_PCODE": "PH07",
+                "ADM0_EN": "Philippines (the)",
+                "ADM0_PCODE": "PH",
+                "date": "2022-11-09",
+                "validOn": "2023-11-06",
+                "validTo": null,
+                "Shape_Leng": 0.0380106872328,
+                "Shape_Area": 5.63021086324e-5,
+                "AREA_SQKM": 0.683262182223
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [123.7955045110001, 9.76275372300006],
+                        [123.79195825800002, 9.754993714000022],
+                        [123.7845347220001, 9.754683990000046],
+                        [123.78345011700003, 9.76157549900006],
+                        [123.7955045110001, 9.76275372300006]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ADM4_EN": "Genomoan",
+                "ADM4_PCODE": "PH0701230039",
+                "ADM4_REF": null,
+                "ADM3_EN": "Loon",
+                "ADM3_PCODE": "PH0701230",
+                "ADM2_EN": "Bohol",
+                "ADM2_PCODE": "PH07012",
+                "ADM1_EN": "Region VII (Central Visayas)",
+                "ADM1_PCODE": "PH07",
+                "ADM0_EN": "Philippines (the)",
+                "ADM0_PCODE": "PH",
+                "date": "2022-11-09",
+                "validOn": "2023-11-06",
+                "validTo": null,
+                "Shape_Leng": 0.080579731347,
+                "Shape_Area": 0.000360244396133,
+                "AREA_SQKM": 4.37089807631
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [123.86923589800006, 9.838598622000063],
+                        [123.88323994100006, 9.829002532000061],
+                        [123.86459550300003, 9.817873501000065],
+                        [123.85787729600008, 9.831296186000031],
+                        [123.86923589800006, 9.838598622000063]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ADM4_EN": "Lintuan",
+                "ADM4_PCODE": "PH0701230040",
+                "ADM4_REF": null,
+                "ADM3_EN": "Loon",
+                "ADM3_PCODE": "PH0701230",
+                "ADM2_EN": "Bohol",
+                "ADM2_PCODE": "PH07012",
+                "ADM1_EN": "Region VII (Central Visayas)",
+                "ADM1_PCODE": "PH07",
+                "ADM0_EN": "Philippines (the)",
+                "ADM0_PCODE": "PH",
+                "date": "2022-11-09",
+                "validOn": "2023-11-06",
+                "validTo": null,
+                "Shape_Leng": 0.0366354817934,
+                "Shape_Area": 6.05787954125e-5,
+                "AREA_SQKM": 0.735096574085
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [123.78671411500011, 9.795386208000025],
+                        [123.79289056900006, 9.790319820000036],
+                        [123.79380093100008, 9.783338075000074],
+                        [123.78805451300002, 9.78507391100004],
+                        [123.78671411500011, 9.795386208000025]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ADM4_EN": "Looc",
+                "ADM4_PCODE": "PH0701230041",
+                "ADM4_REF": null,
+                "ADM3_EN": "Loon",
+                "ADM3_PCODE": "PH0701230",
+                "ADM2_EN": "Bohol",
+                "ADM2_PCODE": "PH07012",
+                "ADM1_EN": "Region VII (Central Visayas)",
+                "ADM1_PCODE": "PH07",
+                "ADM0_EN": "Philippines (the)",
+                "ADM0_PCODE": "PH",
+                "date": "2022-11-09",
+                "validOn": "2023-11-06",
+                "validTo": null,
+                "Shape_Leng": 0.0453699113251,
+                "Shape_Area": 0.000105646453499,
+                "AREA_SQKM": 1.28160415126
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [123.76740856900005, 9.892238258000077],
+                        [123.7795960950001, 9.891351126000075],
+                        [123.78179559900002, 9.885594874000049],
+                        [123.7713267470001, 9.880763624000053],
+                        [123.76740856900005, 9.892238258000077]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ADM4_EN": "Mocpoc Norte",
+                "ADM4_PCODE": "PH0701230042",
+                "ADM4_REF": null,
+                "ADM3_EN": "Loon",
+                "ADM3_PCODE": "PH0701230",
+                "ADM2_EN": "Bohol",
+                "ADM2_PCODE": "PH07012",
+                "ADM1_EN": "Region VII (Central Visayas)",
+                "ADM1_PCODE": "PH07",
+                "ADM0_EN": "Philippines (the)",
+                "ADM0_PCODE": "PH",
+                "date": "2022-11-09",
+                "validOn": "2023-11-06",
+                "validTo": null,
+                "Shape_Leng": 0.0389755303154,
+                "Shape_Area": 5.00724299862e-5,
+                "AREA_SQKM": 0.607483510677
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [123.79006495400006, 9.864341508000052],
+                        [123.7960380830001, 9.862923523000063],
+                        [123.79625560600005, 9.850625480000076],
+                        [123.79061761500009, 9.854116868000062],
+                        [123.79006495400006, 9.864341508000052]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ADM4_EN": "Mocpoc Sur",
+                "ADM4_PCODE": "PH0701230043",
+                "ADM4_REF": null,
+                "ADM3_EN": "Loon",
+                "ADM3_PCODE": "PH0701230",
+                "ADM2_EN": "Bohol",
+                "ADM2_PCODE": "PH07012",
+                "ADM1_EN": "Region VII (Central Visayas)",
+                "ADM1_PCODE": "PH07",
+                "ADM0_EN": "Philippines (the)",
+                "ADM0_PCODE": "PH",
+                "date": "2022-11-09",
+                "validOn": "2023-11-06",
+                "validTo": null,
+                "Shape_Leng": 0.0255822603809,
+                "Shape_Area": 3.26414236846e-5,
+                "AREA_SQKM": 0.396008212654
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [123.78565176300003, 9.856460164000055],
+                        [123.79135553700007, 9.86152501500004],
+                        [123.79061761500009, 9.854116868000062],
+                        [123.78565176300003, 9.856460164000055]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ADM4_EN": "Nagtuang",
+                "ADM4_PCODE": "PH0701230044",
+                "ADM4_REF": null,
+                "ADM3_EN": "Loon",
+                "ADM3_PCODE": "PH0701230",
+                "ADM2_EN": "Bohol",
+                "ADM2_PCODE": "PH07012",
+                "ADM1_EN": "Region VII (Central Visayas)",
+                "ADM1_PCODE": "PH07",
+                "ADM0_EN": "Philippines (the)",
+                "ADM0_PCODE": "PH",
+                "date": "2022-11-09",
+                "validOn": "2023-11-06",
+                "validTo": null,
+                "Shape_Leng": 0.0603478740174,
+                "Shape_Area": 0.000191450117106,
+                "AREA_SQKM": 2.32303277671
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [123.83567020900011, 9.817700197000022],
+                        [123.84857073100011, 9.812443665000046],
+                        [123.84057234600004, 9.797695962000034],
+                        [123.83342713000002, 9.810024406000025],
+                        [123.83567020900011, 9.817700197000022]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ADM4_EN": "Napo (Pob.)",
+                "ADM4_PCODE": "PH0701230045",
+                "ADM4_REF": null,
+                "ADM3_EN": "Loon",
+                "ADM3_PCODE": "PH0701230",
+                "ADM2_EN": "Bohol",
+                "ADM2_PCODE": "PH07012",
+                "ADM1_EN": "Region VII (Central Visayas)",
+                "ADM1_PCODE": "PH07",
+                "ADM0_EN": "Philippines (the)",
+                "ADM0_PCODE": "PH",
+                "date": "2022-11-09",
+                "validOn": "2023-11-06",
+                "validTo": null,
+                "Shape_Leng": 0.0461878272523,
+                "Shape_Area": 3.22938383096e-5,
+                "AREA_SQKM": 0.391857380743
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [123.7896427290001, 9.804950733000055],
+                        [123.79492499600008, 9.802831096000034],
+                        [123.78746907100003, 9.794360322000045],
+                        [123.7896427290001, 9.804950733000055]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ADM4_EN": "Nueva Vida",
+                "ADM4_PCODE": "PH0701230046",
+                "ADM4_REF": null,
+                "ADM3_EN": "Loon",
+                "ADM3_PCODE": "PH0701230",
+                "ADM2_EN": "Bohol",
+                "ADM2_PCODE": "PH07012",
+                "ADM1_EN": "Region VII (Central Visayas)",
+                "ADM1_PCODE": "PH07",
+                "ADM0_EN": "Philippines (the)",
+                "ADM0_PCODE": "PH",
+                "date": "2022-11-09",
+                "validOn": "2023-11-06",
+                "validTo": null,
+                "Shape_Leng": 0.0435435960234,
+                "Shape_Area": 0.000110892810428,
+                "AREA_SQKM": 1.34540979519
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [123.83585192100008, 9.851429018000033],
+                        [123.84672043500007, 9.842640768000024],
+                        [123.83065206200001, 9.844100682000033],
+                        [123.83585192100008, 9.851429018000033]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ADM4_EN": "Panangquilon",
+                "ADM4_PCODE": "PH0701230047",
+                "ADM4_REF": null,
+                "ADM3_EN": "Loon",
+                "ADM3_PCODE": "PH0701230",
+                "ADM2_EN": "Bohol",
+                "ADM2_PCODE": "PH07012",
+                "ADM1_EN": "Region VII (Central Visayas)",
+                "ADM1_PCODE": "PH07",
+                "ADM0_EN": "Philippines (the)",
+                "ADM0_PCODE": "PH",
+                "date": "2022-11-09",
+                "validOn": "2023-11-06",
+                "validTo": null,
+                "Shape_Leng": 0.0470137760018,
+                "Shape_Area": 0.000130068941806,
+                "AREA_SQKM": 1.57801281013
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [123.84519633000002, 9.858192387000031],
+                        [123.85916943300003, 9.859427505000042],
+                        [123.85085089000006, 9.84740642600002],
+                        [123.84519633000002, 9.858192387000031]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ADM4_EN": "Pantudlan",
+                "ADM4_PCODE": "PH0701230048",
+                "ADM4_REF": null,
+                "ADM3_EN": "Loon",
+                "ADM3_PCODE": "PH0701230",
+                "ADM2_EN": "Bohol",
+                "ADM2_PCODE": "PH07012",
+                "ADM1_EN": "Region VII (Central Visayas)",
+                "ADM1_PCODE": "PH07",
+                "ADM0_EN": "Philippines (the)",
+                "ADM0_PCODE": "PH",
+                "date": "2022-11-09",
+                "validOn": "2023-11-06",
+                "validTo": null,
+                "Shape_Leng": 0.0497589928252,
+                "Shape_Area": 0.000127826637295,
+                "AREA_SQKM": 1.55068633238
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [123.76717063000001, 9.89229806000003],
+                        [123.77123113700009, 9.879432158000043],
+                        [123.76116159100002, 9.877113655000073],
+                        [123.75944752300006, 9.889782334000074],
+                        [123.76717063000001, 9.89229806000003]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ADM4_EN": "Pig-ot",
+                "ADM4_PCODE": "PH0701230049",
+                "ADM4_REF": null,
+                "ADM3_EN": "Loon",
+                "ADM3_PCODE": "PH0701230",
+                "ADM2_EN": "Bohol",
+                "ADM2_PCODE": "PH07012",
+                "ADM1_EN": "Region VII (Central Visayas)",
+                "ADM1_PCODE": "PH07",
+                "ADM0_EN": "Philippines (the)",
+                "ADM0_PCODE": "PH",
+                "date": "2022-11-09",
+                "validOn": "2023-11-06",
+                "validTo": null,
+                "Shape_Leng": 0.0368817214425,
+                "Shape_Area": 6.09390414867e-5,
+                "AREA_SQKM": 0.739502729461
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [123.79196662400011, 9.777209034000066],
+                        [123.79171779100011, 9.768823827000062],
+                        [123.78310823000004, 9.770819447000065],
+                        [123.78400055700001, 9.774838086000045],
+                        [123.79196662400011, 9.777209034000066]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ADM4_EN": "Moto Norte (Pob.)",
+                "ADM4_PCODE": "PH0701230050",
+                "ADM4_REF": null,
+                "ADM3_EN": "Loon",
+                "ADM3_PCODE": "PH0701230",
+                "ADM2_EN": "Bohol",
+                "ADM2_PCODE": "PH07012",
+                "ADM1_EN": "Region VII (Central Visayas)",
+                "ADM1_PCODE": "PH07",
+                "ADM0_EN": "Philippines (the)",
+                "ADM0_PCODE": "PH",
+                "date": "2022-11-09",
+                "validOn": "2023-11-06",
+                "validTo": null,
+                "Shape_Leng": 0.0176240897113,
+                "Shape_Area": 1.94596381465e-5,
+                "AREA_SQKM": 0.23612652552
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [123.79221630100005, 9.799653053000043],
+                        [123.79801118800003, 9.799680636000062],
+                        [123.79566976000001, 9.79682187800006],
+                        [123.79221630100005, 9.799653053000043]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ADM4_EN": "Moto Sur (Pob.)",
+                "ADM4_PCODE": "PH0701230051",
+                "ADM4_REF": null,
+                "ADM3_EN": "Loon",
+                "ADM3_PCODE": "PH0701230",
+                "ADM2_EN": "Bohol",
+                "ADM2_PCODE": "PH07012",
+                "ADM1_EN": "Region VII (Central Visayas)",
+                "ADM1_PCODE": "PH07",
+                "ADM0_EN": "Philippines (the)",
+                "ADM0_PCODE": "PH",
+                "date": "2022-11-09",
+                "validOn": "2023-11-06",
+                "validTo": null,
+                "Shape_Leng": 0.0271224471418,
+                "Shape_Area": 4.21107189946e-5,
+                "AREA_SQKM": 0.510985860652
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [123.78746907100003, 9.794360322000045],
+                        [123.79572881700005, 9.796621576000064],
+                        [123.79289056900006, 9.790319820000036],
+                        [123.78746907100003, 9.794360322000045]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ADM4_EN": "Pondol",
+                "ADM4_PCODE": "PH0701230052",
+                "ADM4_REF": null,
+                "ADM3_EN": "Loon",
+                "ADM3_PCODE": "PH0701230",
+                "ADM2_EN": "Bohol",
+                "ADM2_PCODE": "PH07012",
+                "ADM1_EN": "Region VII (Central Visayas)",
+                "ADM1_PCODE": "PH07",
+                "ADM0_EN": "Philippines (the)",
+                "ADM0_PCODE": "PH",
+                "date": "2022-11-09",
+                "validOn": "2023-11-06",
+                "validTo": null,
+                "Shape_Leng": 0.0876751143917,
+                "Shape_Area": 0.000175617276806,
+                "AREA_SQKM": 2.13055950416
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [123.83896030400001, 9.87361011400003],
+                        [123.85313738200011, 9.865708300000051],
+                        [123.84312318400009, 9.856151647000047],
+                        [123.83488329400006, 9.865314217000048],
+                        [123.83896030400001, 9.87361011400003]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ADM4_EN": "Quinobcoban",
+                "ADM4_PCODE": "PH0701230053",
+                "ADM4_REF": null,
+                "ADM3_EN": "Loon",
+                "ADM3_PCODE": "PH0701230",
+                "ADM2_EN": "Bohol",
+                "ADM2_PCODE": "PH07012",
+                "ADM1_EN": "Region VII (Central Visayas)",
+                "ADM1_PCODE": "PH07",
+                "ADM0_EN": "Philippines (the)",
+                "ADM0_PCODE": "PH",
+                "date": "2022-11-09",
+                "validOn": "2023-11-06",
+                "validTo": null,
+                "Shape_Leng": 0.0615424137081,
+                "Shape_Area": 0.000202596726354,
+                "AREA_SQKM": 2.45843323514
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [123.82644387500011, 9.799704665000036],
+                        [123.83621670000002, 9.779769722000026],
+                        [123.82997935000003, 9.774246925000057],
+                        [123.82072210600006, 9.795936010000048],
+                        [123.82644387500011, 9.799704665000036]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ADM4_EN": "Sondol",
+                "ADM4_PCODE": "PH0701230054",
+                "ADM4_REF": null,
+                "ADM3_EN": "Loon",
+                "ADM3_PCODE": "PH0701230",
+                "ADM2_EN": "Bohol",
+                "ADM2_PCODE": "PH07012",
+                "ADM1_EN": "Region VII (Central Visayas)",
+                "ADM1_PCODE": "PH07",
+                "ADM0_EN": "Philippines (the)",
+                "ADM0_PCODE": "PH",
+                "date": "2022-11-09",
+                "validOn": "2023-11-06",
+                "validTo": null,
+                "Shape_Leng": 0.0375406833758,
+                "Shape_Area": 8.20670005364e-5,
+                "AREA_SQKM": 0.99564503282
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [123.7941187890001, 9.857883321000031],
+                        [123.80597635800007, 9.85900902700007],
+                        [123.79702298900008, 9.851116070000046],
+                        [123.7941187890001, 9.857883321000031]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ADM4_EN": "Song-on",
+                "ADM4_PCODE": "PH0701230055",
+                "ADM4_REF": null,
+                "ADM3_EN": "Loon",
+                "ADM3_PCODE": "PH0701230",
+                "ADM2_EN": "Bohol",
+                "ADM2_PCODE": "PH07012",
+                "ADM1_EN": "Region VII (Central Visayas)",
+                "ADM1_PCODE": "PH07",
+                "ADM0_EN": "Philippines (the)",
+                "ADM0_PCODE": "PH",
+                "date": "2022-11-09",
+                "validOn": "2023-11-06",
+                "validTo": null,
+                "Shape_Leng": 0.0505627031171,
+                "Shape_Area": 7.46249820781e-5,
+                "AREA_SQKM": 0.90565480096
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [123.8050480600001, 9.75065218100002],
+                        [123.79487165300009, 9.745464608000077],
+                        [123.78727010000011, 9.739557790000049],
+                        [123.78676449600005, 9.748118457000032],
+                        [123.8050480600001, 9.75065218100002]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ADM4_EN": "Talisay",
+                "ADM4_PCODE": "PH0701230056",
+                "ADM4_REF": null,
+                "ADM3_EN": "Loon",
+                "ADM3_PCODE": "PH0701230",
+                "ADM2_EN": "Bohol",
+                "ADM2_PCODE": "PH07012",
+                "ADM1_EN": "Region VII (Central Visayas)",
+                "ADM1_PCODE": "PH07",
+                "ADM0_EN": "Philippines (the)",
+                "ADM0_PCODE": "PH",
+                "date": "2022-11-09",
+                "validOn": "2023-11-06",
+                "validTo": null,
+                "Shape_Leng": 0.0501511548728,
+                "Shape_Area": 0.000131610434347,
+                "AREA_SQKM": 1.59662444122
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [123.76742815300008, 9.87604877800004],
+                        [123.78394354400007, 9.878872905000037],
+                        [123.77432067900008, 9.866974776000063],
+                        [123.76742815300008, 9.87604877800004]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ADM4_EN": "Tan-awan",
+                "ADM4_PCODE": "PH0701230057",
+                "ADM4_REF": null,
+                "ADM3_EN": "Loon",
+                "ADM3_PCODE": "PH0701230",
+                "ADM2_EN": "Bohol",
+                "ADM2_PCODE": "PH07012",
+                "ADM1_EN": "Region VII (Central Visayas)",
+                "ADM1_PCODE": "PH07",
+                "ADM0_EN": "Philippines (the)",
+                "ADM0_PCODE": "PH",
+                "date": "2022-11-09",
+                "validOn": "2023-11-06",
+                "validTo": null,
+                "Shape_Leng": 0.0535550951252,
+                "Shape_Area": 0.00019370465255,
+                "AREA_SQKM": 2.35059127263
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [123.82037114400009, 9.785964489000037],
+                        [123.82997935000003, 9.774246925000057],
+                        [123.82554860500011, 9.771443956000041],
+                        [123.81220533400005, 9.774949852000077],
+                        [123.82037114400009, 9.785964489000037]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ADM4_EN": "Tangnan",
+                "ADM4_PCODE": "PH0701230058",
+                "ADM4_REF": null,
+                "ADM3_EN": "Loon",
+                "ADM3_PCODE": "PH0701230",
+                "ADM2_EN": "Bohol",
+                "ADM2_PCODE": "PH07012",
+                "ADM1_EN": "Region VII (Central Visayas)",
+                "ADM1_PCODE": "PH07",
+                "ADM0_EN": "Philippines (the)",
+                "ADM0_PCODE": "PH",
+                "date": "2022-11-09",
+                "validOn": "2023-11-06",
+                "validTo": null,
+                "Shape_Leng": 0.056661066148,
+                "Shape_Area": 0.000115193417815,
+                "AREA_SQKM": 1.3979195949
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [123.7854837860001, 9.770227525000053],
+                        [123.79971675800005, 9.766664444000071],
+                        [123.8055493280001, 9.760676895000074],
+                        [123.78359163300001, 9.761619206000034],
+                        [123.7854837860001, 9.770227525000053]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ADM4_EN": "Taytay",
+                "ADM4_PCODE": "PH0701230059",
+                "ADM4_REF": null,
+                "ADM3_EN": "Loon",
+                "ADM3_PCODE": "PH0701230",
+                "ADM2_EN": "Bohol",
+                "ADM2_PCODE": "PH07012",
+                "ADM1_EN": "Region VII (Central Visayas)",
+                "ADM1_PCODE": "PH07",
+                "ADM0_EN": "Philippines (the)",
+                "ADM0_PCODE": "PH",
+                "date": "2022-11-09",
+                "validOn": "2023-11-06",
+                "validTo": null,
+                "Shape_Leng": 0.0557726268741,
+                "Shape_Area": 0.000140739807837,
+                "AREA_SQKM": 1.70797089048
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [123.79017419500008, 9.757260279000036],
+                        [123.81494132700004, 9.760400533000052],
+                        [123.80337015600003, 9.752660156000047],
+                        [123.79017419500008, 9.757260279000036]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ADM4_EN": "Ticugan",
+                "ADM4_PCODE": "PH0701230060",
+                "ADM4_REF": null,
+                "ADM3_EN": "Loon",
+                "ADM3_PCODE": "PH0701230",
+                "ADM2_EN": "Bohol",
+                "ADM2_PCODE": "PH07012",
+                "ADM1_EN": "Region VII (Central Visayas)",
+                "ADM1_PCODE": "PH07",
+                "ADM0_EN": "Philippines (the)",
+                "ADM0_PCODE": "PH",
+                "date": "2022-11-09",
+                "validOn": "2023-11-06",
+                "validTo": null,
+                "Shape_Leng": 0.0606764517879,
+                "Shape_Area": 0.000174732224591,
+                "AREA_SQKM": 2.12013369398
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [123.81556113900001, 9.82356730500004],
+                        [123.82482474400001, 9.820197822000068],
+                        [123.8166930220001, 9.807480142000031],
+                        [123.80781874000002, 9.810193795000032],
+                        [123.81556113900001, 9.82356730500004]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ADM4_EN": "Tiwi",
+                "ADM4_PCODE": "PH0701230061",
+                "ADM4_REF": null,
+                "ADM3_EN": "Loon",
+                "ADM3_PCODE": "PH0701230",
+                "ADM2_EN": "Bohol",
+                "ADM2_PCODE": "PH07012",
+                "ADM1_EN": "Region VII (Central Visayas)",
+                "ADM1_PCODE": "PH07",
+                "ADM0_EN": "Philippines (the)",
+                "ADM0_PCODE": "PH",
+                "date": "2022-11-09",
+                "validOn": "2023-11-06",
+                "validTo": null,
+                "Shape_Leng": 0.0354336713462,
+                "Shape_Area": 7.89369810583e-5,
+                "AREA_SQKM": 0.957872467829
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [123.80247245700002, 9.786176812000065],
+                        [123.81614099600006, 9.786324841000066],
+                        [123.81066460300008, 9.781147996000072],
+                        [123.80247245700002, 9.786176812000065]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ADM4_EN": "Tontonan",
+                "ADM4_PCODE": "PH0701230062",
+                "ADM4_REF": null,
+                "ADM3_EN": "Loon",
+                "ADM3_PCODE": "PH0701230",
+                "ADM2_EN": "Bohol",
+                "ADM2_PCODE": "PH07012",
+                "ADM1_EN": "Region VII (Central Visayas)",
+                "ADM1_PCODE": "PH07",
+                "ADM0_EN": "Philippines (the)",
+                "ADM0_PCODE": "PH",
+                "date": "2022-11-09",
+                "validOn": "2023-11-06",
+                "validTo": null,
+                "Shape_Leng": 0.0573542421688,
+                "Shape_Area": 9.38146612662e-5,
+                "AREA_SQKM": 1.13852366512
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [123.80337015600003, 9.752660156000047],
+                        [123.78591824000011, 9.747430640000061],
+                        [123.78433640300011, 9.751768430000027],
+                        [123.78481239500002, 9.754729183000052],
+                        [123.80337015600003, 9.752660156000047]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ADM4_EN": "Tubodacu",
+                "ADM4_PCODE": "PH0701230063",
+                "ADM4_REF": null,
+                "ADM3_EN": "Loon",
+                "ADM3_PCODE": "PH0701230",
+                "ADM2_EN": "Bohol",
+                "ADM2_PCODE": "PH07012",
+                "ADM1_EN": "Region VII (Central Visayas)",
+                "ADM1_PCODE": "PH07",
+                "ADM0_EN": "Philippines (the)",
+                "ADM0_PCODE": "PH",
+                "date": "2022-11-09",
+                "validOn": "2023-11-06",
+                "validTo": null,
+                "Shape_Leng": 0.0624591117989,
+                "Shape_Area": 0.000206336190133,
+                "AREA_SQKM": 2.50365961799
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [123.82666902000005, 9.818156285000043],
+                        [123.83655536800006, 9.804477338000027],
+                        [123.82072210600006, 9.795936010000048],
+                        [123.82214448500008, 9.812794206000035],
+                        [123.82666902000005, 9.818156285000043]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ADM4_EN": "Tubodio",
+                "ADM4_PCODE": "PH0701230064",
+                "ADM4_REF": null,
+                "ADM3_EN": "Loon",
+                "ADM3_PCODE": "PH0701230",
+                "ADM2_EN": "Bohol",
+                "ADM2_PCODE": "PH07012",
+                "ADM1_EN": "Region VII (Central Visayas)",
+                "ADM1_PCODE": "PH07",
+                "ADM0_EN": "Philippines (the)",
+                "ADM0_PCODE": "PH",
+                "date": "2022-11-09",
+                "validOn": "2023-11-06",
+                "validTo": null,
+                "Shape_Leng": 0.0395695799497,
+                "Shape_Area": 9.73003791315e-5,
+                "AREA_SQKM": 1.1806730952
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [123.79988998400006, 9.797082983000053],
+                        [123.8120761670001, 9.793551179000076],
+                        [123.81218792300001, 9.789176431000044],
+                        [123.79988998400006, 9.797082983000053]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ADM4_EN": "Tubuan",
+                "ADM4_PCODE": "PH0701230065",
+                "ADM4_REF": null,
+                "ADM3_EN": "Loon",
+                "ADM3_PCODE": "PH0701230",
+                "ADM2_EN": "Bohol",
+                "ADM2_PCODE": "PH07012",
+                "ADM1_EN": "Region VII (Central Visayas)",
+                "ADM1_PCODE": "PH07",
+                "ADM0_EN": "Philippines (the)",
+                "ADM0_PCODE": "PH",
+                "date": "2022-11-09",
+                "validOn": "2023-11-06",
+                "validTo": null,
+                "Shape_Leng": 0.0504280185332,
+                "Shape_Area": 0.000121639821595,
+                "AREA_SQKM": 1.47601510991
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [123.84816500700003, 9.802978882000048],
+                        [123.85714247700002, 9.796341418000054],
+                        [123.84588126000006, 9.787291498000059],
+                        [123.84057234600004, 9.797695962000034],
+                        [123.84816500700003, 9.802978882000048]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ADM4_EN": "Ubayon",
+                "ADM4_PCODE": "PH0701230066",
+                "ADM4_REF": null,
+                "ADM3_EN": "Loon",
+                "ADM3_PCODE": "PH0701230",
+                "ADM2_EN": "Bohol",
+                "ADM2_PCODE": "PH07012",
+                "ADM1_EN": "Region VII (Central Visayas)",
+                "ADM1_PCODE": "PH07",
+                "ADM0_EN": "Philippines (the)",
+                "ADM0_PCODE": "PH",
+                "date": "2022-11-09",
+                "validOn": "2023-11-06",
+                "validTo": null,
+                "Shape_Leng": 0.0419137650658,
+                "Shape_Area": 3.72160956473e-5,
+                "AREA_SQKM": 0.451529022356
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [123.81504551600005, 9.84061669600004],
+                        [123.8172725070001, 9.846275580000054],
+                        [123.82234524600005, 9.841321352000023],
+                        [123.81504551600005, 9.84061669600004]
+                    ]
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "ADM4_EN": "Ubojan",
+                "ADM4_PCODE": "PH0701230067",
+                "ADM4_REF": null,
+                "ADM3_EN": "Loon",
+                "ADM3_PCODE": "PH0701230",
+                "ADM2_EN": "Bohol",
+                "ADM2_PCODE": "PH07012",
+                "ADM1_EN": "Region VII (Central Visayas)",
+                "ADM1_PCODE": "PH07",
+                "ADM0_EN": "Philippines (the)",
+                "ADM0_PCODE": "PH",
+                "date": "2022-11-09",
+                "validOn": "2023-11-06",
+                "validTo": null,
+                "Shape_Leng": 0.0411138196743,
+                "Shape_Area": 4.31235541967e-5,
+                "AREA_SQKM": 0.523183549175
+            },
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [123.80075308800008, 9.85413642800006],
+                        [123.81584677400008, 9.854207045000067],
+                        [123.81640205600002, 9.852563333000035],
+                        [123.80075308800008, 9.85413642800006]
+                    ]
+                ]
+            }
+        }
+    ]
+}

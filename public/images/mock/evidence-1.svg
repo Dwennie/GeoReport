@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-label="Mock evidence photo">
+  <rect width="640" height="420" fill="#e7e5e4"/>
+  <path d="M0 300h640v120H0z" fill="#d6d3d1"/>
+  <path d="M120 300c40-26 90-38 150-38s110 12 150 38z" fill="#a8a29e"/>
+  <circle cx="300" cy="196" r="46" fill="#78716c" opacity=".35"/>
+  <circle cx="300" cy="196" r="26" fill="#57534e" opacity=".45"/>
+  <g fill="none" stroke="#78716c" stroke-width="3" opacity=".5">
+    <path d="M60 120h120M60 150h80M460 120h120M500 150h80"/>
+  </g>
+  <text x="320" y="392" font-family="monospace" font-size="18" fill="#57534e" text-anchor="middle">MOCK EVIDENCE — ROAD SURFACE</text>
+</svg>

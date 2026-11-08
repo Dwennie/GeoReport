@@ -1,0 +1,5 @@
+*
+!geojson/
+!private/
+!public/
+!.gitignore

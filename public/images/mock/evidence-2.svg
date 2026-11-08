@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 420" role="img" aria-label="Mock evidence photo">
+  <rect width="640" height="420" fill="#e2e8f0"/>
+  <path d="M0 320h640v100H0z" fill="#cbd5e1"/>
+  <g stroke="#64748b" stroke-width="8" fill="none" opacity=".55">
+    <path d="M140 320V150h80v170M420 320V150h80v170"/>
+  </g>
+  <circle cx="180" cy="126" r="20" fill="#94a3b8" opacity=".6"/>
+  <circle cx="460" cy="126" r="20" fill="#94a3b8" opacity=".6"/>
+  <g fill="#94a3b8" opacity=".35">
+    <rect x="240" y="230" width="60" height="90"/>
+    <rect x="330" y="200" width="70" height="120"/>
+  </g>
+  <text x="320" y="392" font-family="monospace" font-size="18" fill="#475569" text-anchor="middle">MOCK EVIDENCE — STREET SITE</text>
+</svg>

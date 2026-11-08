@@ -1,0 +1,77 @@
+services:
+    app:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        container_name: georeport_app
+        working_dir: /var/www/html
+        volumes:
+            - .:/var/www/html
+        depends_on:
+            db:
+                condition: service_healthy
+        networks:
+            - georeport
+
+    nginx:
+        image: nginx:alpine
+        container_name: georeport_nginx
+        ports:
+            - '8000:80'
+        volumes:
+            - .:/var/www/html
+            - ./nginx/default.conf:/etc/nginx/conf.d/default.conf
+        depends_on:
+            - app
+        networks:
+            - georeport
+
+    db:
+        image: mysql:8.4
+        container_name: georeport_db
+        restart: unless-stopped
+        environment:
+            MYSQL_DATABASE: georeport
+            MYSQL_ROOT_PASSWORD: rootpassword
+            MYSQL_USER: georeport
+            MYSQL_PASSWORD: georeportpassword
+        ports:
+            - '3306:3306'
+        volumes:
+            - dbdata:/var/lib/mysql
+        healthcheck:
+            test:
+                [
+                    'CMD',
+                    'mysqladmin',
+                    'ping',
+                    '-h',
+                    'localhost',
+                    '-prootpassword',
+                ]
+            interval: 5s
+            timeout: 5s
+            retries: 10
+        networks:
+            - georeport
+
+    node:
+        image: node:22-alpine
+        container_name: georeport_node
+        working_dir: /var/www/html
+        volumes:
+            - .:/var/www/html
+            - node_modules:/var/www/html/node_modules
+        ports:
+            - '5173:5173'
+        command: sh -c "npm install && npm run dev -- --host 0.0.0.0"
+        networks:
+            - georeport
+
+volumes:
+    dbdata:
+    node_modules:
+
+networks:
+    georeport:
+        driver: bridge
