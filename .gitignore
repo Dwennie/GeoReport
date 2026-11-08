@@ -12,6 +12,8 @@
 /resources/js/actions
 /resources/js/routes
 /resources/js/wayfinder
+/src-tauri/gen
+/src-tauri/target
 /vendor
 .DS_Store
 .env

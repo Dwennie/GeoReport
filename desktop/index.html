@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>GeoReport — Municipality of Loon, Province of Bohol</title>
+        <style>
+            :root {
+                color-scheme: dark;
+                --bg: #08101e;
+                --card: #0e1b31;
+                --border: #1e2f4d;
+                --text: #f8fafc;
+                --muted: #94a3b8;
+                --emerald: #10b981;
+                --amber: #f59e0b;
+                --danger: #f87171;
+            }
+
+            * {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+
+            body {
+                min-height: 100vh;
+                display: flex;
+                flex-direction: column;
+                font-family:
+                    system-ui,
+                    -apple-system,
+                    'Segoe UI',
+                    Roboto,
+                    sans-serif;
+                background: radial-gradient(
+                    circle at top,
+                    #102341 0%,
+                    var(--bg) 65%
+                );
+                color: var(--text);
+            }
+
+            .tricolor {
+                display: flex;
+                height: 4px;
+                width: 100%;
+            }
+            .tricolor span:nth-child(1) {
+                flex: 1;
+                background: #0038a8;
+            }
+            .tricolor span:nth-child(2) {
+                flex: 1;
+                background: #fcd116;
+            }
+            .tricolor span:nth-child(3) {
+                flex: 1;
+                background: #ce1126;
+            }
+
+            .ribbon {
+                padding: 8px 20px;
+                border-bottom: 1px solid var(--border);
+                background: rgba(11, 21, 40, 0.9);
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                gap: 8px;
+                font-size: 11px;
+                color: var(--muted);
+            }
+
+            .ribbon strong {
+                color: #ffffff;
+                letter-spacing: 0.05em;
+                text-transform: uppercase;
+            }
+
+            .ribbon .domain {
+                color: var(--emerald);
+                font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+            }
+
+            main {
+                flex: 1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 24px;
+            }
+
+            .card {
+                width: 100%;
+                max-width: 460px;
+                background: var(--card);
+                border: 1px solid var(--border);
+                border-radius: 16px;
+                padding: 28px;
+                box-shadow: 0 20px 45px rgba(0, 0, 0, 0.45);
+            }
+
+            .brand {
+                display: flex;
+                align-items: center;
+                gap: 14px;
+                margin-bottom: 20px;
+            }
+
+            .brand img {
+                width: 56px;
+                height: 56px;
+                border-radius: 50%;
+                object-fit: contain;
+                background: rgba(255, 255, 255, 0.04);
+                padding: 2px;
+            }
+
+            .eyebrow {
+                font-size: 11px;
+                font-weight: 700;
+                letter-spacing: 0.08em;
+                text-transform: uppercase;
+                color: var(--amber);
+            }
+
+            h1 {
+                font-size: 20px;
+                font-weight: 800;
+                letter-spacing: -0.02em;
+                margin-top: 2px;
+            }
+
+            .subtitle {
+                font-size: 12px;
+                color: var(--emerald);
+                font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+                margin-top: 2px;
+            }
+
+            p.desc {
+                font-size: 13px;
+                line-height: 1.55;
+                color: var(--muted);
+                margin-bottom: 18px;
+            }
+
+            label {
+                display: block;
+                font-size: 11px;
+                font-weight: 700;
+                letter-spacing: 0.06em;
+                text-transform: uppercase;
+                color: var(--muted);
+                margin-bottom: 6px;
+            }
+
+            input {
+                width: 100%;
+                height: 42px;
+                padding: 0 12px;
+                border-radius: 8px;
+                border: 1px solid var(--border);
+                background: #07101f;
+                color: var(--text);
+                font-size: 14px;
+                font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+                outline: none;
+            }
+
+            input:focus {
+                border-color: var(--emerald);
+            }
+
+            .presets {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 6px;
+                margin-top: 8px;
+                margin-bottom: 16px;
+            }
+
+            .chip {
+                background: rgba(16, 185, 129, 0.1);
+                border: 1px solid rgba(16, 185, 129, 0.3);
+                color: #6ee7b7;
+                border-radius: 6px;
+                padding: 4px 8px;
+                font-size: 11px;
+                font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+                cursor: pointer;
+            }
+
+            .chip:hover {
+                background: rgba(16, 185, 129, 0.2);
+            }
+
+            button.primary {
+                width: 100%;
+                height: 44px;
+                border: 1px solid rgba(16, 185, 129, 0.4);
+                border-radius: 9px;
+                background: #059669;
+                color: #ffffff;
+                font-size: 14px;
+                font-weight: 700;
+                cursor: pointer;
+                transition: background 0.15s ease;
+            }
+
+            button.primary:hover:not(:disabled) {
+                background: #10b981;
+            }
+
+            button.primary:disabled {
+                opacity: 0.65;
+                cursor: wait;
+            }
+
+            .status {
+                margin-top: 14px;
+                padding: 10px 12px;
+                border-radius: 8px;
+                font-size: 12px;
+                line-height: 1.45;
+                display: none;
+            }
+
+            .status.error {
+                display: block;
+                background: rgba(248, 113, 113, 0.1);
+                border: 1px solid rgba(248, 113, 113, 0.35);
+                color: var(--danger);
+            }
+
+            .status.info {
+                display: block;
+                background: rgba(16, 185, 129, 0.1);
+                border: 1px solid rgba(16, 185, 129, 0.3);
+                color: #6ee7b7;
+            }
+
+            .hint {
+                margin-top: 16px;
+                padding-top: 14px;
+                border-top: 1px solid var(--border);
+                font-size: 11px;
+                line-height: 1.5;
+                color: var(--muted);
+            }
+
+            code {
+                font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+                color: #e2e8f0;
+                background: rgba(255, 255, 255, 0.06);
+                padding: 1px 5px;
+                border-radius: 4px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="tricolor"><span></span><span></span><span></span></div>
+        <div class="ribbon">
+            <div>
+                <strong>Republic of the Philippines</strong> &bull; Municipality
+                of Loon, Province of Bohol
+            </div>
+            <span class="domain">GeoReport Desktop &bull; loon.gov.ph</span>
+        </div>
+
+        <main>
+            <div class="card">
+                <div class="brand">
+                    <img
+                        src="./loon-seal.png"
+                        alt="Municipality of Loon Seal"
+                    />
+                    <div>
+                        <div class="eyebrow">Official Desktop Client</div>
+                        <h1>MUNICIPALITY OF LOON</h1>
+                        <div class="subtitle">GeoReport &bull; loon.gov.ph</div>
+                    </div>
+                </div>
+
+                <p class="desc">
+                    Connect to your running GeoReport Docker server (MySQL +
+                    Laravel). All reports, GIS pins, and photos sync directly
+                    with your live container database.
+                </p>
+
+                <form id="connect-form">
+                    <label for="server-url">GeoReport Server Address</label>
+                    <input
+                        id="server-url"
+                        type="text"
+                        value="http://localhost:8000"
+                        placeholder="http://localhost:8000"
+                        autocomplete="off"
+                        spellcheck="false"
+                        required
+                    />
+
+                    <div class="presets">
+                        <button
+                            type="button"
+                            class="chip"
+                            data-url="http://localhost:8000"
+                        >
+                            Local Docker (localhost:8000)
+                        </button>
+                        <button
+                            type="button"
+                            class="chip"
+                            data-url="http://127.0.0.1:8000"
+                        >
+                            127.0.0.1:8000
+                        </button>
+                    </div>
+
+                    <button id="connect-btn" type="submit" class="primary">
+                        Connect to GeoReport Portal
+                    </button>
+                </form>
+
+                <div id="status-box" class="status"></div>
+
+                <div class="hint">
+                    <strong>Tip:</strong> Start your Docker stack in WSL first
+                    with <code>docker compose up -d</code>. If running this
+                    <code>.exe</code> on another laptop over Wi-Fi, enter the
+                    host laptop's LAN IP (for example
+                    <code>http://192.168.1.10:8000</code>).
+                </div>
+            </div>
+        </main>
+
+        <script>
+            const form = document.getElementById('connect-form');
+            const input = document.getElementById('server-url');
+            const button = document.getElementById('connect-btn');
+            const statusBox = document.getElementById('status-box');
+
+            function setStatus(kind, message) {
+                statusBox.className = 'status ' + kind;
+                statusBox.textContent = message;
+            }
+
+            async function invokeTauri(cmd, args) {
+                if (
+                    window.__TAURI__ &&
+                    window.__TAURI__.core &&
+                    typeof window.__TAURI__.core.invoke === 'function'
+                ) {
+                    return window.__TAURI__.core.invoke(cmd, args);
+                }
+                throw new Error('Tauri runtime bridge is not available.');
+            }
+
+            async function attemptConnect(url) {
+                button.disabled = true;
+                button.textContent = 'Connecting…';
+                setStatus('info', 'Checking connection to ' + url + ' …');
+
+                try {
+                    await invokeTauri('connect_server', { url });
+                } catch (err) {
+                    setStatus('error', String(err));
+                    button.disabled = false;
+                    button.textContent = 'Connect to GeoReport Portal';
+                }
+            }
+
+            document.querySelectorAll('.chip').forEach((chip) => {
+                chip.addEventListener('click', () => {
+                    input.value =
+                        chip.getAttribute('data-url') ||
+                        'http://localhost:8000';
+                    attemptConnect(input.value);
+                });
+            });
+
+            form.addEventListener('submit', (event) => {
+                event.preventDefault();
+                attemptConnect(input.value);
+            });
+
+            window.addEventListener('DOMContentLoaded', async () => {
+                try {
+                    const saved = await invokeTauri('get_saved_server', {});
+                    if (saved) {
+                        input.value = saved;
+                    }
+                } catch (_) {
+                    // Keep default localhost URL
+                }
+                attemptConnect(input.value);
+            });
+        </script>
+    </body>
+</html>

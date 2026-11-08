@@ -91,6 +91,28 @@ Citizens can register directly at `/register`, and the Administrator can promote
 
 ---
 
+## Windows Desktop App (`GeoReport.exe` via Tauri v2)
+
+GeoReport includes a lightweight Rust + Tauri v2 Windows desktop client (`src-tauri/` + `desktop/`) branded with the official **Municipality of Loon** seal. It connects directly to your running Docker server (`http://localhost:8000` or a host LAN IP such as `http://192.168.1.x:8000`) so all reports, GIS pins, role changes, and photo uploads share the live Docker MySQL (`georeport`) database in real time.
+
+### Option A: Download Prebuilt `GeoReport.exe` (GitHub Actions)
+
+1. Open the **Actions** tab on GitHub and select **Build Windows Desktop EXE (Tauri)**.
+2. Open the latest completed workflow run and download **`GeoReport-Portable-EXE`** (single standalone `GeoReport.exe`, no installer required) or **`GeoReport-Windows-Setup`** (optional NSIS installer).
+3. Make sure your Docker stack is running (`docker compose up -d`), then launch **`GeoReport.exe`**.
+
+### Option B: Build Locally on Windows
+
+Requires [Rust](https://rustup.rs/), Visual Studio C++ Build Tools, and Node.js 22+:
+
+```powershell
+npx @tauri-apps/cli@2 build
+```
+
+The standalone portable executable is output to `src-tauri/target/release/GeoReport.exe`.
+
+---
+
 ## Quality Checks & Testing
 
 ```bash

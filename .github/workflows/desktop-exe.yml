@@ -1,0 +1,54 @@
+name: Build Windows Desktop EXE (Tauri)
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - 'src-tauri/**'
+      - 'desktop/**'
+      - '.github/workflows/desktop-exe.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  build-windows-exe:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install Rust stable toolchain
+        uses: dtolnay/rust-toolchain@stable
+
+      - name: Cache Rust build artifacts
+        uses: swatinem/rust-cache@v2
+        with:
+          workspaces: 'src-tauri -> target'
+
+      - name: Build GeoReport Windows EXE via Tauri v2
+        run: npx --yes @tauri-apps/cli@2 build
+
+      - name: Upload Portable Single EXE (GeoReport.exe)
+        uses: actions/upload-artifact@v4
+        with:
+          name: GeoReport-Portable-EXE
+          path: src-tauri/target/release/GeoReport.exe
+          if-no-files-found: error
+          retention-days: 30
+
+      - name: Upload Windows Installer (Optional Setup EXE)
+        uses: actions/upload-artifact@v4
+        with:
+          name: GeoReport-Windows-Setup
+          path: src-tauri/target/release/bundle/nsis/*.exe
+          if-no-files-found: ignore
+          retention-days: 30
