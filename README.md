@@ -58,12 +58,13 @@
     docker compose up -d --build app nginx db
     ```
 
-4. **Install PHP dependencies, generate app key, link storage, and seed the database:**
+4. **Install PHP dependencies, generate app key, link storage, generate route types, and seed the database:**
 
     ```bash
     docker compose exec app composer install
     docker compose exec app php artisan key:generate
     docker compose exec app php artisan storage:link
+    docker compose exec app php artisan wayfinder:generate --with-form
     docker compose exec app php artisan migrate --seed
     ```
 

@@ -1,3 +1,4 @@
+import { spawnSync } from 'node:child_process';
 import inertia from '@inertiajs/vite';
 import { wayfinder } from '@laravel/vite-plugin-wayfinder';
 import tailwindcss from '@tailwindcss/vite';
@@ -5,6 +6,8 @@ import vue from '@vitejs/plugin-vue';
 import laravel from 'laravel-vite-plugin';
 import { bunny } from 'laravel-vite-plugin/fonts';
 import { defineConfig, lazyPlugins } from 'vite-plus';
+
+const hasPhpBinary = spawnSync('php', ['-v'], { stdio: 'ignore' }).status === 0;
 
 export default defineConfig({
     plugins: lazyPlugins(() => [
@@ -27,9 +30,13 @@ export default defineConfig({
                 },
             },
         }),
-        wayfinder({
-            formVariants: true,
-        }),
+        ...(hasPhpBinary
+            ? [
+                  wayfinder({
+                      formVariants: true,
+                  }),
+              ]
+            : []),
     ]),
 
     // Docker / Vite development server
