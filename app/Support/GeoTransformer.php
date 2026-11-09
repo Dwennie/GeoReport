@@ -52,7 +52,7 @@ class GeoTransformer
     /**
      * @return array<string, mixed>
      */
-    public static function toDetail(Report $report): array
+    public static function toDetail(Report $report, bool $includeInternalNotes = true): array
     {
         $summary = self::toSummary($report);
 
@@ -74,7 +74,11 @@ class GeoTransformer
                 'url' => str_starts_with($img->image_path, 'http') ? $img->image_path : asset('storage/'.$img->image_path),
             ])->values()->all();
 
-        $notes = $report->comments->map(fn (ReportComment $c) => [
+        $comments = $includeInternalNotes
+            ? $report->comments
+            : $report->comments->reject(fn (ReportComment $c) => (bool) $c->is_internal);
+
+        $notes = $comments->map(fn (ReportComment $c) => [
             'id' => $c->id,
             'authorName' => $c->user->name ?? 'System Officer',
             'authorRole' => $c->user->role ?? 'staff',

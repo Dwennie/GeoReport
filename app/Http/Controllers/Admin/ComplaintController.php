@@ -8,6 +8,7 @@ use App\Models\Report;
 use App\Models\ReportUpdate;
 use App\Models\User;
 use App\Support\GeoTransformer;
+use App\Support\PlatformSettings;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Collection;
@@ -364,7 +365,7 @@ class ComplaintController extends Controller
     public function settings(): Response
     {
         return Inertia::render('admin/Settings', [
-            'settingsData' => $this->loadPlatformSettings(),
+            'settingsData' => PlatformSettings::all(),
         ]);
     }
 
@@ -390,12 +391,7 @@ class ComplaintController extends Controller
             'mapZoom' => (int) $validated['mapZoom'],
         ];
 
-        $settingsPath = storage_path('app/settings.json');
-        if (! is_dir(dirname($settingsPath))) {
-            mkdir(dirname($settingsPath), 0775, true);
-        }
-
-        file_put_contents($settingsPath, json_encode($payload, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES));
+        PlatformSettings::save($payload);
 
         Inertia::flash('toast', [
             'type' => 'success',
@@ -442,33 +438,5 @@ class ComplaintController extends Controller
         }
 
         return round((float) $durations->avg(), 1);
-    }
-
-    /**
-     * @return array<string, int|float|string>
-     */
-    private function loadPlatformSettings(): array
-    {
-        $defaults = [
-            'platformName' => 'GeoReport — Loon, Bohol',
-            'supportEmail' => 'support@loon.gov.ph',
-            'maxPhotos' => 5,
-            'autoAssignRadius' => 2.5,
-            'mapLatitude' => 9.7997,
-            'mapLongitude' => 123.7925,
-            'mapZoom' => 13,
-        ];
-
-        $settingsPath = storage_path('app/settings.json');
-        if (! is_file($settingsPath)) {
-            return $defaults;
-        }
-
-        $decoded = json_decode((string) file_get_contents($settingsPath), true);
-        if (! is_array($decoded)) {
-            return $defaults;
-        }
-
-        return array_merge($defaults, array_intersect_key($decoded, $defaults));
     }
 }

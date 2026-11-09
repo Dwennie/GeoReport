@@ -10,9 +10,18 @@ export type ImagePreview = {
     file?: File;
 };
 
-const props = defineProps<{
-    modelValue?: ImagePreview[];
-}>();
+const props = withDefaults(
+    defineProps<{
+        modelValue?: ImagePreview[];
+        max?: number;
+        maxSizeMb?: number;
+    }>(),
+    {
+        modelValue: () => [],
+        max: 5,
+        maxSizeMb: 10,
+    },
+);
 
 const emit = defineEmits<{
     (e: 'update:modelValue', value: ImagePreview[]): void;
@@ -36,8 +45,15 @@ function onSelect(event: Event): void {
     const target = event.target as HTMLInputElement;
     const files = Array.from(target.files ?? []);
 
-    const added: ImagePreview[] = files.map((file, index) => ({
-        id: `${file.name}-${file.lastModified}-${index}`,
+    const remainingSlots = Math.max(0, props.max - previews.value.length);
+    const maxBytes = props.maxSizeMb * 1024 * 1024;
+
+    const validFiles = files
+        .filter((file) => file.size <= maxBytes)
+        .slice(0, remainingSlots);
+
+    const added: ImagePreview[] = validFiles.map((file, index) => ({
+        id: `${file.name}-${file.lastModified}-${index}-${Date.now()}`,
         name: file.name,
         url: URL.createObjectURL(file),
         file,
@@ -77,12 +93,14 @@ onBeforeUnmount(() => {
         />
 
         <div
+            v-if="previews.length < props.max"
             class="flex flex-col items-center justify-center gap-2 rounded-lg border border-dashed px-4 py-6 text-center"
         >
             <ImagePlus class="size-5 text-muted-foreground" />
             <p class="text-sm font-medium">Add photos</p>
             <p class="text-xs text-muted-foreground">
-                JPG or PNG, up to 5 files. Photos help staff locate the concern.
+                JPG, PNG, or WEBP, up to {{ props.max }} files (max
+                {{ props.maxSizeMb }}MB each).
             </p>
             <Button
                 type="button"

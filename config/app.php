@@ -56,6 +56,19 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Trusted Proxies
+    |--------------------------------------------------------------------------
+    |
+    | Comma-separated proxy IPs/CIDRs (or "*") allowed to set X-Forwarded-*
+    | headers. Set this only when the app sits behind a reverse proxy such
+    | as Caddy, Nginx, Railway, or Render. Empty means no proxy is trusted.
+    |
+    */
+
+    'trusted_proxies' => env('TRUSTED_PROXIES'),
+
+    /*
+    |--------------------------------------------------------------------------
     | Application Timezone
     |--------------------------------------------------------------------------
     |

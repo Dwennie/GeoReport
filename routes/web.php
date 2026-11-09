@@ -6,7 +6,9 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 Route::inertia('/', 'Welcome')->name('home');
-Route::get('geojson/loon-barangays', [GeoJsonController::class, 'loonBarangays'])->name('geojson.loon');
+Route::get('geojson/loon-barangays', [GeoJsonController::class, 'loonBarangays'])
+    ->middleware('throttle:geojson')
+    ->name('geojson.loon');
 
 Route::middleware(['auth'])->group(function () {
     Route::get('dashboard', function (Request $request) {

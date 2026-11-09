@@ -1,0 +1,80 @@
+services:
+    app:
+        build:
+            context: .
+            dockerfile: Dockerfile.prod
+        container_name: georeport_prod_app
+        restart: always
+        env_file:
+            - .env
+        environment:
+            APP_ENV: production
+            APP_DEBUG: 'false'
+            DB_CONNECTION: mysql
+            DB_HOST: db
+            DB_PORT: 3306
+            DB_DATABASE: ${DB_DATABASE:-georeport}
+            DB_USERNAME: ${DB_USERNAME:-georeport}
+            DB_PASSWORD: ${DB_PASSWORD}
+            RUN_MIGRATIONS: 'true'
+        volumes:
+            - storage_data:/var/www/html/storage
+        depends_on:
+            db:
+                condition: service_healthy
+        networks:
+            - georeport_prod_net
+
+    web:
+        image: nginx:alpine
+        container_name: georeport_prod_web
+        restart: always
+        ports:
+            - '${APP_PORT:-80}:80'
+        volumes:
+            - ./nginx/prod.conf:/etc/nginx/conf.d/default.conf:ro
+            - storage_data:/var/www/html/storage:ro
+        depends_on:
+            - app
+        networks:
+            - georeport_prod_net
+
+    db:
+        image: mysql:8.4
+        container_name: georeport_prod_db
+        restart: always
+        environment:
+            MYSQL_DATABASE: ${DB_DATABASE:-georeport}
+            MYSQL_USER: ${DB_USERNAME:-georeport}
+            MYSQL_PASSWORD: ${DB_PASSWORD}
+            MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
+        volumes:
+            - db_data:/var/lib/mysql
+        healthcheck:
+            test:
+                [
+                    'CMD',
+                    'mysqladmin',
+                    'ping',
+                    '-h',
+                    'localhost',
+                    '-u',
+                    'root',
+                    '-p${DB_ROOT_PASSWORD}',
+                ]
+            interval: 10s
+            timeout: 5s
+            retries: 5
+            start_period: 30s
+        networks:
+            - georeport_prod_net
+
+volumes:
+    storage_data:
+        driver: local
+    db_data:
+        driver: local
+
+networks:
+    georeport_prod_net:
+        driver: bridge

@@ -35,6 +35,8 @@ class User extends Authenticatable implements PasskeyUser
     /** @use HasFactory<UserFactory> */
     use HasFactory, HasRoles, Notifiable, PasskeyAuthenticatable, TwoFactorAuthenticatable;
 
+    public const DEACTIVATED_MESSAGE = 'This account has been deactivated. Please contact the Municipality of Loon administrator.';
+
     /**
      * The attributes that are mass assignable.
      *
@@ -104,6 +106,11 @@ class User extends Authenticatable implements PasskeyUser
     public function comments(): HasMany
     {
         return $this->hasMany(ReportComment::class, 'user_id');
+    }
+
+    public function isActive(): bool
+    {
+        return $this->status !== 'inactive';
     }
 
     /**

@@ -1,0 +1,121 @@
+# ==========================================
+# Multi-Stage Production Dockerfile for GeoReport
+# ==========================================
+
+# ------------------------------------------
+# Stage 1: Build Frontend Assets (Vite)
+# ------------------------------------------
+FROM node:22-alpine AS frontend-builder
+WORKDIR /app
+
+COPY package.json package-lock.json ./
+RUN npm ci
+
+COPY . .
+RUN npm run build
+
+# ------------------------------------------
+# Stage 2: Install Composer Production Dependencies
+# ------------------------------------------
+FROM composer:2 AS composer-builder
+WORKDIR /app
+
+COPY composer.json composer.lock ./
+RUN composer install \
+    --no-dev \
+    --no-interaction \
+    --no-scripts \
+    --prefer-dist \
+    --optimize-autoloader
+
+# ------------------------------------------
+# Stage 3: Final Production PHP-FPM Image
+# ------------------------------------------
+FROM php:8.4-fpm
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    netcat-openbsd \
+    curl \
+    unzip \
+    zip \
+    libpng-dev \
+    libjpeg62-turbo-dev \
+    libfreetype6-dev \
+    libzip-dev \
+    libicu-dev \
+    libonig-dev \
+    && docker-php-ext-configure gd --with-freetype --with-jpeg \
+    && docker-php-ext-install -j"$(nproc)" \
+        pdo_mysql \
+        mbstring \
+        exif \
+        pcntl \
+        bcmath \
+        gd \
+        zip \
+        intl \
+        opcache \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
+
+WORKDIR /var/www/html
+
+# Use official production php.ini template
+RUN mv "$PHP_INI_DIR/php.ini-production" "$PHP_INI_DIR/php.ini"
+
+# Production PHP settings with OPcache enabled
+RUN echo "memory_limit = 512M\n\
+max_execution_time = 120\n\
+upload_max_filesize = 50M\n\
+post_max_size = 50M\n\
+max_input_time = 120\n\
+default_socket_timeout = 120\n\
+expose_php = Off\n\
+\n\
+[opcache]\n\
+opcache.enable = 1\n\
+opcache.enable_cli = 1\n\
+opcache.memory_consumption = 256\n\
+opcache.interned_strings_buffer = 16\n\
+opcache.max_accelerated_files = 20000\n\
+opcache.validate_timestamps = 0\n\
+opcache.save_comments = 1\n" > "$PHP_INI_DIR/conf.d/georeport-prod.ini"
+
+# Optimized PHP-FPM pool configuration
+RUN echo "[www]\n\
+pm = dynamic\n\
+pm.max_children = 25\n\
+pm.start_servers = 5\n\
+pm.min_spare_servers = 3\n\
+pm.max_spare_servers = 8\n\
+pm.max_requests = 1000\n\
+request_terminate_timeout = 120s\n\
+catch_workers_output = yes\n" > /usr/local/etc/php-fpm.d/zz-docker-georeport.conf
+
+# Copy application source code
+COPY . /var/www/html
+
+# Copy pre-installed vendor and pre-compiled frontend assets
+COPY --from=composer-builder /app/vendor /var/www/html/vendor
+COPY --from=frontend-builder /app/public/build /var/www/html/public/build
+
+# Copy production entrypoint
+COPY docker/entrypoint.prod.sh /usr/local/bin/entrypoint.prod.sh
+RUN chmod +x /usr/local/bin/entrypoint.prod.sh
+
+# Ensure storage and bootstrap directories exist with proper permissions
+RUN mkdir -p /var/www/html/storage/framework/cache/data \
+    /var/www/html/storage/framework/sessions \
+    /var/www/html/storage/framework/views \
+    /var/www/html/storage/app/public \
+    /var/www/html/storage/app/private \
+    /var/www/html/storage/logs \
+    /var/www/html/bootstrap/cache \
+    && chown -R www-data:www-data /var/www/html/storage /var/www/html/bootstrap/cache \
+    && chmod -R 775 /var/www/html/storage /var/www/html/bootstrap/cache
+
+EXPOSE 9000
+
+ENTRYPOINT ["/usr/local/bin/entrypoint.prod.sh"]
+CMD ["php-fpm"]

@@ -34,6 +34,7 @@ const props = defineProps<{
     }>;
     barangaysList?: Barangay[];
     barangayOptions?: string[];
+    maxPhotos?: number;
 }>();
 
 defineOptions({
@@ -296,7 +297,10 @@ function confirmSubmit(): void {
 
                     <div class="space-y-2">
                         <Label>Photos</Label>
-                        <ImageUploadPreview v-model="photos" />
+                        <ImageUploadPreview
+                            v-model="photos"
+                            :max="props.maxPhotos ?? 5"
+                        />
                     </div>
 
                     <div class="flex justify-end gap-2 border-t pt-4">

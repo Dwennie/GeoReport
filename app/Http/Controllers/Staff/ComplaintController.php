@@ -70,7 +70,8 @@ class ComplaintController extends Controller
         $validated = $request->validate([
             'status' => 'required|in:assigned,in_progress,resolved,closed',
             'remarks' => 'nullable|string|max:500',
-            'photos.*' => 'nullable|image|max:10240',
+            'photos' => 'nullable|array|max:5',
+            'photos.*' => 'image|mimes:jpg,jpeg,png,webp,gif|max:10240',
         ]);
 
         $user = $request->user();
@@ -118,7 +119,7 @@ class ComplaintController extends Controller
     public function addNote(Request $request, int $id): RedirectResponse
     {
         $validated = $request->validate([
-            'comment' => 'required|string|min:3',
+            'comment' => 'required|string|min:3|max:2000',
             'is_internal' => 'nullable|boolean',
         ]);
 

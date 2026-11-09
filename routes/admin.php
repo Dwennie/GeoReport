@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |--------------------------------------------------------------------------
 */
 
-Route::middleware(['auth', EnsureUserRole::class.':administrator'])
+Route::middleware(['auth', EnsureUserRole::class.':administrator', 'throttle:workspace-actions'])
     ->prefix('admin')
     ->name('admin.')
     ->group(function () {

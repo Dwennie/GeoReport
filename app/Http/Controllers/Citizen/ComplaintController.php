@@ -11,6 +11,8 @@ use App\Models\ReportImage;
 use App\Models\ReportUpdate;
 use App\Support\GeoCatalog;
 use App\Support\GeoTransformer;
+use App\Support\JsonFileStore;
+use App\Support\PlatformSettings;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Inertia\Inertia;
@@ -94,6 +96,7 @@ class ComplaintController extends Controller
             'categoriesList' => $categories,
             'barangaysList' => $barangaysList,
             'barangayOptions' => $barangayRecords->pluck('name')->values()->all(),
+            'maxPhotos' => PlatformSettings::maxPhotos(),
         ]);
     }
 
@@ -106,10 +109,11 @@ class ComplaintController extends Controller
             'category_id' => 'required|exists:categories,id',
             'barangay' => 'required|string|max:100|exists:barangays,name',
             'address' => 'nullable|string|max:255',
-            'description' => 'required|string|min:15',
+            'description' => 'required|string|min:15|max:5000',
             'latitude' => 'nullable|numeric|between:-90,90',
             'longitude' => 'nullable|numeric|between:-180,180',
-            'photos.*' => 'nullable|image|max:10240',
+            'photos' => 'nullable|array|max:'.PlatformSettings::maxPhotos(),
+            'photos.*' => 'image|mimes:jpg,jpeg,png,webp,gif|max:10240',
         ]);
 
         $user = $request->user();
@@ -170,16 +174,18 @@ class ComplaintController extends Controller
     {
         $user = $request->user();
 
+        // Citizens may open their own reports, or community reports that are publicly listed.
         $report = Report::where(function ($query) use ($user) {
             $query->where('user_id', $user->id)
-                ->orWhere('is_public', true);
+                ->orWhere(fn ($public) => $public->publicView());
         })
             ->with(['category', 'user', 'assignedStaff', 'images', 'updates.user', 'comments.user'])
             ->findOrFail($id);
 
         return Inertia::render('citizen/complaints/Show', [
             'complaintId' => $id,
-            'complaintData' => GeoTransformer::toDetail($report),
+            // Internal staff notes never leave the server for citizen viewers.
+            'complaintData' => GeoTransformer::toDetail($report, includeInternalNotes: false),
         ]);
     }
 
@@ -283,22 +289,18 @@ class ComplaintController extends Controller
     public function markNotificationsRead(Request $request): RedirectResponse
     {
         $validated = $request->validate([
-            'ids' => 'required|array|min:1',
-            'ids.*' => 'string|max:50',
+            'ids' => 'required|array|min:1|max:100',
+            'ids.*' => ['string', 'max:50', 'regex:/^(update|note)-\d+$/'],
         ]);
 
         $userKey = 'u_'.(string) $request->user()->id;
         $store = $this->loadNotificationReadStore();
         $existing = array_key_exists($userKey, $store) ? $store[$userKey] : [];
         $merged = array_values(array_unique(array_merge($existing, $validated['ids'])));
-        $store[$userKey] = $merged;
+        // Keep only the most recent read markers so the store cannot grow without bound.
+        $store[$userKey] = array_slice($merged, -500);
 
-        $path = storage_path('app/notifications_read.json');
-        if (! is_dir(dirname($path))) {
-            mkdir(dirname($path), 0775, true);
-        }
-
-        file_put_contents($path, json_encode($store, JSON_PRETTY_PRINT));
+        JsonFileStore::write('notifications_read.json', $store);
 
         return back();
     }
@@ -328,15 +330,7 @@ class ComplaintController extends Controller
      */
     private function loadNotificationReadStore(): array
     {
-        $path = storage_path('app/notifications_read.json');
-        if (! is_file($path)) {
-            return [];
-        }
-
-        $decoded = json_decode((string) file_get_contents($path), true);
-        if (! is_array($decoded)) {
-            return [];
-        }
+        $decoded = JsonFileStore::read('notifications_read.json');
 
         $normalized = [];
         foreach ($decoded as $key => $ids) {

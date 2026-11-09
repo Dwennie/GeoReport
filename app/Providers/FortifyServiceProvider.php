@@ -9,10 +9,12 @@ use Illuminate\Auth\Events\Login;
 use Illuminate\Cache\RateLimiting\Limit;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Event;
+use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\RateLimiter;
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Support\Str;
 use Illuminate\Validation\Rules\Password;
+use Illuminate\Validation\ValidationException;
 use Inertia\Inertia;
 use Laravel\Fortify\Features;
 use Laravel\Fortify\Fortify;
@@ -83,6 +85,24 @@ class FortifyServiceProvider extends ServiceProvider
     {
         Fortify::resetUserPasswordsUsing(ResetUserPassword::class);
         Fortify::createUsersUsing(CreateNewUser::class);
+
+        Fortify::authenticateUsing(function (Request $request): ?User {
+            $user = User::query()
+                ->where('email', Str::lower((string) $request->input(Fortify::username())))
+                ->first();
+
+            if ($user === null || ! Hash::check((string) $request->input('password'), $user->password)) {
+                return null;
+            }
+
+            if (! $user->isActive()) {
+                throw ValidationException::withMessages([
+                    Fortify::username() => User::DEACTIVATED_MESSAGE,
+                ]);
+            }
+
+            return $user;
+        });
     }
 
     /**

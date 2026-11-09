@@ -10,7 +10,7 @@ use Illuminate\Support\Facades\Route;
 |--------------------------------------------------------------------------
 */
 
-Route::middleware(['auth', EnsureUserRole::class.':staff'])
+Route::middleware(['auth', EnsureUserRole::class.':staff', 'throttle:workspace-actions'])
     ->prefix('staff')
     ->name('staff.')
     ->group(function () {

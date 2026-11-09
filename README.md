@@ -113,6 +113,64 @@ The standalone portable executable is output to `src-tauri/target/release/GeoRep
 
 ---
 
+## Cloud Production Deployment (Running 24/7 Without Your Laptop)
+
+To keep GeoReport running 24/7 with MySQL in the cloud so anyone (browser or Windows `GeoReport.exe`) can connect without keeping your laptop on:
+
+### Option 1: Any Cloud VPS (DigitalOcean, Hetzner, AWS Lightsail, Linode) — Recommended
+
+Deploy on any $4–$6/month Linux VPS:
+
+1. **Clone the `prod` branch on your server:**
+
+    ```bash
+    git clone -b prod https://github.com/Dwennie/GeoReport.git
+    cd GeoReport
+    ```
+
+2. **Configure production environment:**
+
+    ```bash
+    cp .env.production.example .env
+    # Generate an application encryption key
+    docker run --rm -v $(pwd):/app -w /app composer:2 composer install --no-dev
+    docker run --rm -v $(pwd):/app -w /app php:8.4-cli php artisan key:generate
+    ```
+
+    Edit `.env` to set your server's domain/IP and strong database passwords.
+
+3. **Launch the production stack:**
+    ```bash
+    docker compose -f docker-compose.prod.yml up -d --build
+    ```
+    The production image automatically runs database migrations, links public storage, builds optimized Vite assets, pre-warms OPcache, and configures Nginx caching.
+
+### Option 2: Managed PaaS (Coolify, Railway, or Render)
+
+- **Coolify (Self-hosted Heroku on VPS):** Connect your GitHub repository, choose the `prod` branch, and select `docker-compose.prod.yml`.
+- **Railway / Render:** Connect the repository, add a MySQL service, set environment variables from `.env.production.example`, and deploy using `Dockerfile.prod`.
+
+---
+
+## Security & Rate Limiting Architecture
+
+GeoReport implements enterprise-grade defense-in-depth:
+
+- **Tiered Rate Limiting:**
+    - `web`: Baseline protection (240 req/min authenticated, 300 req/min unauthenticated).
+    - `report-submissions`: Throttles citizen report creation to 5/minute and 30/hour per user/IP.
+    - `workspace-actions`: Throttles state mutations (status updates, case notes, assignments, user edits) to 30 req/min for staff/citizens and 90 req/min for admins.
+    - `fortify`: Strict rate limits on user registration (5/min, 20/hr), password resets (3/min, 5/hr per email), and password changes (6/min).
+    - `geojson`: Throttles public boundary GeoJSON queries to 60 req/min.
+    - **Inertia Toast Error Handling:** Rate limit (HTTP 429) triggers a user-friendly toast informing them of the exact cooldown seconds rather than displaying a raw error page.
+- **Security Headers Middleware:** Emits `X-Content-Type-Options: nosniff`, `X-Frame-Options: SAMEORIGIN`, `Referrer-Policy: strict-origin-when-cross-origin`, `Cross-Origin-Opener-Policy: same-origin`, restrictive `Permissions-Policy`, and strips `X-Powered-By`.
+- **Reverse Proxy Protection (`TrustProxies`):** Configurable `TRUSTED_PROXIES` ensures `X-Forwarded-For` spoofing cannot bypass rate limiters behind Cloudflare, Caddy, or PaaS load balancers.
+- **Mid-Session Deactivation Enforcement:** `EnsureAccountIsActive` immediately logs out accounts marked inactive by administrators and invalidates their session.
+- **Data Leakage Prevention:** Internal staff notes are excluded at the API/transformer layer when rendering public community reports for citizens.
+- **File Upload Safeguards:** Enforces strict image MIME types (`jpg, jpeg, png, webp, gif`), maximum file size (10 MB), and maximum photo count matching `PlatformSettings::maxPhotos()`.
+
+---
+
 ## Quality Checks & Testing
 
 ```bash
