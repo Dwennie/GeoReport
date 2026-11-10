@@ -1,4 +1,4 @@
-import type { InertiaLinkProps } from '@inertiajs/vue3';
+import type { InertiaLinkProps } from '@inertiajs/react';
 import { clsx } from 'clsx';
 import type { ClassValue } from 'clsx';
 import { twMerge } from 'tailwind-merge';
@@ -8,5 +8,5 @@ export function cn(...inputs: ClassValue[]) {
 }
 
 export function toUrl(href: NonNullable<InertiaLinkProps['href']>) {
-    return typeof href === 'string' ? href : href?.url;
+    return typeof href === 'string' ? href : (href as { url?: string })?.url ?? String(href);
 }

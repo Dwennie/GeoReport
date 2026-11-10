@@ -1,20 +1,28 @@
-import { computed } from 'vue';
-import { usePage } from '@inertiajs/vue3';
+import { useMemo } from 'react';
+import { usePage } from '@inertiajs/react';
 import type { SharedBarangayItem, SharedCategoryItem } from '@/types/geo';
 
 export function useTaxonomy() {
-    const page = usePage();
+    const page = usePage<{
+        taxonomy?: {
+            categories?: SharedCategoryItem[];
+            barangays?: SharedBarangayItem[];
+        };
+    }>();
 
-    const categories = computed<SharedCategoryItem[]>(
+    const categories = useMemo<SharedCategoryItem[]>(
         () => page.props.taxonomy?.categories ?? [],
+        [page.props.taxonomy?.categories],
     );
 
-    const activeCategories = computed<SharedCategoryItem[]>(() =>
-        categories.value.filter((category) => category.isActive),
+    const activeCategories = useMemo<SharedCategoryItem[]>(
+        () => categories.filter((category) => category.isActive),
+        [categories],
     );
 
-    const barangays = computed<SharedBarangayItem[]>(
+    const barangays = useMemo<SharedBarangayItem[]>(
         () => page.props.taxonomy?.barangays ?? [],
+        [page.props.taxonomy?.barangays],
     );
 
     function findCategoryById(
@@ -24,7 +32,7 @@ export function useTaxonomy() {
             return undefined;
         }
 
-        return categories.value.find(
+        return categories.find(
             (category) => String(category.id) === String(id),
         );
     }

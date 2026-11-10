@@ -1,5 +1,5 @@
-import type { InertiaLinkProps } from '@inertiajs/vue3';
-import type { LucideIcon } from '@lucide/vue';
+import type { InertiaLinkProps } from '@inertiajs/react';
+import type { LucideIcon } from 'lucide-react';
 
 export type BreadcrumbItem = {
     title: string;

@@ -2,7 +2,7 @@ import { spawnSync } from 'node:child_process';
 import inertia from '@inertiajs/vite';
 import { wayfinder } from '@laravel/vite-plugin-wayfinder';
 import tailwindcss from '@tailwindcss/vite';
-import vue from '@vitejs/plugin-vue';
+import react from '@vitejs/plugin-react';
 import laravel from 'laravel-vite-plugin';
 import { bunny } from 'laravel-vite-plugin/fonts';
 import { defineConfig, lazyPlugins } from 'vite-plus';
@@ -12,7 +12,7 @@ const hasPhpBinary = spawnSync('php', ['-v'], { stdio: 'ignore' }).status === 0;
 export default defineConfig({
     plugins: lazyPlugins(() => [
         laravel({
-            input: ['resources/css/app.css', 'resources/js/app.ts'],
+            input: ['resources/css/app.css', 'resources/js/app.tsx'],
             refresh: true,
             fonts: [
                 bunny('Instrument Sans', {
@@ -22,14 +22,7 @@ export default defineConfig({
         }),
         inertia(),
         tailwindcss(),
-        vue({
-            template: {
-                transformAssetUrls: {
-                    base: null,
-                    includeAbsolute: false,
-                },
-            },
-        }),
+        react(),
         ...(hasPhpBinary
             ? [
                   wayfinder({

@@ -1,14 +1,15 @@
-import { computed } from 'vue';
-import { usePage } from '@inertiajs/vue3';
+import { useMemo } from 'react';
+import { usePage } from '@inertiajs/react';
 import type { GeoRole } from '@/types/geo';
+import type { User } from '@/types/auth';
 
 /**
  * Resolves the authenticated user's role strictly from the active database session.
  */
 export function useCurrentRole() {
-    const page = usePage();
+    const page = usePage<{ auth?: { user?: User } }>();
 
-    const role = computed<GeoRole>(() => {
+    const role = useMemo<GeoRole>(() => {
         const authRole = page.props.auth?.user?.role;
 
         if (
@@ -20,7 +21,7 @@ export function useCurrentRole() {
         }
 
         return 'citizen';
-    });
+    }, [page.props.auth?.user?.role]);
 
     return { role };
 }

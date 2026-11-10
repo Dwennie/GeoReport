@@ -13,7 +13,7 @@ import {
     TrendingUp,
     UserCheck,
     Users,
-} from '@lucide/vue';
+} from 'lucide-react';
 import type { NavItem } from '@/types';
 import type { GeoRole } from '@/types/geo';
 
